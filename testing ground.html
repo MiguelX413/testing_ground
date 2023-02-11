@@ -1,120 +1,157 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP|Noto+Sans+KR|Noto+Sans+SC|Noto+Sans+TC|Noto+Serif|Noto+Serif+JP|Noto+Serif+KR|Noto+Serif+SC|Noto+Serif+TC" rel="stylesheet">
-
-
-<style>
-@font-face {
-	font-family: 'HanaMinA';
-	src:	local('HanaMinA'),
-			url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinA.woff') format('woff'),
-			url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinA.ttf') format('truetype'), 
-			url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinA.svg') format('svg');
-			/*url('https://rawcdn.githack.com/z-ohnami/FLWork/19225cd874f0b8bb0c1b99b9548dbffb8a56dfa8/assets/font/HanaMinA.ttf') format('truetype');		url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinA.woff') format('woff');*/
-			/*url('file:///home/chronos/u-1a1579447faa093af388cde1c1a21fdd3767f696/MyFiles/Downloads/HanaMinA%20(1).otf') format('opentype');*/
-}
-@font-face {
-	font-family: 'HanaMinB';
-	src:	local('HanaMinB'),
-			url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinB.woff') format('woff'),
-			url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinB.ttf') format('truetype'),
-			url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinB.svg') format('svg');
-			/*url('https://github-production-release-asset-2e65be.s3.amazonaws.com/23043205/e6b215ca-1db6-11e8-8e99-69c7667960a4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20190517%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190517T033531Z&X-Amz-Expires=300&X-Amz-Signature=759009c6336b770b6e5599881aa8a23ea32f5b4d77f7f86b8249a232f23fe979&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3DHanaMinB.otf')*/
-}
-@font-face {
-	font-family: 'HanaMinPlus';
-	src:	local('HanaMinPlus'),
-			/*url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinB.woff') format('woff'),
-			url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinB.ttf') format('truetype'),
-			url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinB.svg') format('svg');
-			/*url('https://github-production-release-asset-2e65be.s3.amazonaws.com/23043205/e6b215ca-1db6-11e8-8e99-69c7667960a4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20190517%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190517T033531Z&X-Amz-Expires=300&X-Amz-Signature=759009c6336b770b6e5599881aa8a23ea32f5b4d77f7f86b8249a232f23fe979&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3DHanaMinB.otf')*/
-}
-@font-face {
-	font-family: 'Nom Na Tong';
-	src:	local('Nom Na Tong'),
-			url('https://www.chunom.org/media/css/fonts/nomnatong-supplement.woff') format('woff'),
-			url('https://www.chunom.org/media/css/fonts/nomnatong.ttf') format('truetype');
-}
-@font-face {
-font-family: 'Han-Nom Gothic Supplement';
-src:		local('Han-Nom Gothic'),
-			url('https://www.chunom.org/media/css/fonts/hannom-gothic-supplement.woff') format('woff'),
-			url('https://www.chunom.org/media/css/fonts/hannom-gothic-supplement.ttf') format('truetype');
-}
-/* @font-face {
-	font-family: 'MisakiMincho';
-	src:	url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/misaki_mincho.woff') format('woff'),
-			url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/misaki_mincho.ttf') format('truetype');
-			/*url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/misaki_mincho.svg') format('svg');*/
-			/*url('https://github-production-release-asset-2e65be.s3.amazonaws.com/23043205/e6b215ca-1db6-11e8-8e99-69c7667960a4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20190517%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190517T033531Z&X-Amz-Expires=300&X-Amz-Signature=759009c6336b770b6e5599881aa8a23ea32f5b4d77f7f86b8249a232f23fe979&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3DHanaMinB.otf')*/
-} */
-@font-face {
-	font-family: 'BabelStone Han';
-	src:	local('BabelStone Han');
-}
-.VietRt {
-	font-family: Times, TimesNewRoman, serif;
-	margin: 1pt;
-}
-.ThirtyRt {
-	font-size: 30%;
-}
-.jaFonts1 {
-	font-family: 'HanaMinA', 'HanaMinB', 'HanaMinPlus', source-han-serif-japanese, 'Noto Serif', serif;
-}
-.viFonts1 {
-	font-family: Times, 'TimesNewRoman', 'HanaMinA', 'HanaMinB', 'HanaMinPlus', 'Nom Na Tong', 'Han-Nom Gothic Supplement', 'Nom Na Tong Supplement', 'Han-Nom Gothic', 'Noto Serif', 'source-han-serif-tc', serif;
-}
-.koFonts1 {
-	font-family: source-han-serif-korean, 'Noto Serif', 'HanaMinA', 'HanaMinB', 'HanaMinPlus', serif;
-}
-.TWFonts1 {
-	font-family: 'Noto Serif', source-han-serif-tc, 'HanaMinA', 'HanaMinB', 'HanaMinPlus', serif;
-}
-.HKFonts1 {
-	font-family: 'Noto Serif', source-han-serif-tc, 'HanaMinA', 'HanaMinB', 'HanaMinPlus', serif;
-}
-.CNFonts1 {
-	font-family: 'Noto Serif', source-han-serif-sc, 'HanaMinA', 'HanaMinB', 'HanaMinPlus', serif;
-}
-ol {
-	counter-reset: item
-}
-li {
-	display: block
-}
-li:before {
-	content: counters(item, ".") " ";
-	counter-increment: item
-}
-</style>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+JP|Noto+Sans+KR|Noto+Sans+SC|Noto+Sans+TC|Noto+Serif|Noto+Serif+JP|Noto+Serif+KR|Noto+Serif+SC|Noto+Serif+TC"
+          rel="stylesheet">
 
 
-<!-- - - >
-<script>
-  (function(d) {
-    var config = {
-      kitId: 'rgk5ops',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script> < ! - - -->
+    <style>
+        @font-face {
+            font-family: 'HanaMinA';
+            src: local('HanaMinA'),
+            url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinA.woff') format('woff'),
+            url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinA.ttf') format('truetype'),
+            url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinA.svg') format('svg');
+            /*url('https://rawcdn.githack.com/z-ohnami/FLWork/19225cd874f0b8bb0c1b99b9548dbffb8a56dfa8/assets/font/HanaMinA.ttf') format('truetype');		url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinA.woff') format('woff');*/
+            /*url('file:///home/chronos/u-1a1579447faa093af388cde1c1a21fdd3767f696/MyFiles/Downloads/HanaMinA%20(1).otf') format('opentype');*/
+        }
 
-<script>
-  (function(d) {
-    var config = {
-      kitId: 'jul2jjd',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
+        @font-face {
+            font-family: 'HanaMinB';
+            src: local('HanaMinB'),
+            url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinB.woff') format('woff'),
+            url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinB.ttf') format('truetype'),
+            url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinB.svg') format('svg');
+            /*url('https://github-production-release-asset-2e65be.s3.amazonaws.com/23043205/e6b215ca-1db6-11e8-8e99-69c7667960a4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20190517%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190517T033531Z&X-Amz-Expires=300&X-Amz-Signature=759009c6336b770b6e5599881aa8a23ea32f5b4d77f7f86b8249a232f23fe979&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3DHanaMinB.otf')*/
+        }
+
+        @font-face {
+            font-family: 'HanaMinPlus';
+            src: local('HanaMinPlus'),
+            /*url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinB.woff') format('woff'),
+            url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinB.ttf') format('truetype'),
+            url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/HanaMinB.svg') format('svg');
+            /*url('https://github-production-release-asset-2e65be.s3.amazonaws.com/23043205/e6b215ca-1db6-11e8-8e99-69c7667960a4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20190517%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190517T033531Z&X-Amz-Expires=300&X-Amz-Signature=759009c6336b770b6e5599881aa8a23ea32f5b4d77f7f86b8249a232f23fe979&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3DHanaMinB.otf')*/
+        }
+
+        @font-face {
+            font-family: 'Nom Na Tong';
+            src: local('Nom Na Tong'),
+            url('https://www.chunom.org/media/css/fonts/nomnatong-supplement.woff') format('woff'),
+            url('https://www.chunom.org/media/css/fonts/nomnatong.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Han-Nom Gothic Supplement';
+            src: local('Han-Nom Gothic'),
+            url('https://www.chunom.org/media/css/fonts/hannom-gothic-supplement.woff') format('woff'),
+            url('https://www.chunom.org/media/css/fonts/hannom-gothic-supplement.ttf') format('truetype');
+        }
+
+        /* @font-face {
+            font-family: 'MisakiMincho';
+            src:	url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/misaki_mincho.woff') format('woff'),
+                    url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/misaki_mincho.ttf') format('truetype');
+                    /*url('https://cdn.jsdelivr.net/gh/z-ohnami/FLWork@master/assets/font/misaki_mincho.svg') format('svg');*/
+        /*url('https://github-production-release-asset-2e65be.s3.amazonaws.com/23043205/e6b215ca-1db6-11e8-8e99-69c7667960a4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20190517%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190517T033531Z&X-Amz-Expires=300&X-Amz-Signature=759009c6336b770b6e5599881aa8a23ea32f5b4d77f7f86b8249a232f23fe979&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3DHanaMinB.otf')*/
+        }
+        *
+
+        /
+        @font-face {
+            font-family: 'BabelStone Han';
+            src: local('BabelStone Han');
+        }
+
+        .VietRt {
+            font-family: Times, TimesNewRoman, serif;
+            margin: 1pt;
+        }
+
+        .ThirtyRt {
+            font-size: 30%;
+        }
+
+        .jaFonts1 {
+            font-family: 'HanaMinA', 'HanaMinB', 'HanaMinPlus', source-han-serif-japanese, 'Noto Serif', serif;
+        }
+
+        .viFonts1 {
+            font-family: Times, 'TimesNewRoman', 'HanaMinA', 'HanaMinB', 'HanaMinPlus', 'Nom Na Tong', 'Han-Nom Gothic Supplement', 'Nom Na Tong Supplement', 'Han-Nom Gothic', 'Noto Serif', 'source-han-serif-tc', serif;
+        }
+
+        .koFonts1 {
+            font-family: source-han-serif-korean, 'Noto Serif', 'HanaMinA', 'HanaMinB', 'HanaMinPlus', serif;
+        }
+
+        .TWFonts1 {
+            font-family: 'Noto Serif', source-han-serif-tc, 'HanaMinA', 'HanaMinB', 'HanaMinPlus', serif;
+        }
+
+        .HKFonts1 {
+            font-family: 'Noto Serif', source-han-serif-tc, 'HanaMinA', 'HanaMinB', 'HanaMinPlus', serif;
+        }
+
+        .CNFonts1 {
+            font-family: 'Noto Serif', source-han-serif-sc, 'HanaMinA', 'HanaMinB', 'HanaMinPlus', serif;
+        }
+
+        ol {
+            counter-reset: item
+        }
+
+        li {
+            display: block
+        }
+
+        li:before {
+            content: counters(item, ".") " ";
+            counter-increment: item
+        }
+    </style>
+
+
+    <!-- - - >
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'rgk5ops',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script> < ! - - -->
+
+    <script>
+        (function (d) {
+            var config = {
+                    kitId: 'jul2jjd',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement, t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+                s = d.getElementsByTagName("script")[0], a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {
+                }
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 </head>
 <!-- <body style="writing-mode: vertical-rl"> -->
 <!-- <body style="font-family: source-han-sans-cjk, sans-serif;"> -->
@@ -124,38 +161,80 @@ li:before {
 <!-- <span lang="zh-HK" xml:lang="zh-HK" style="font-family: source-han-sans, sans-serif;"> -->
 <span lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1">
 <p>
-<ruby><rb>日</rb><rp>（</rp><rt class="ThirtyRt">に</rt><rp>）</rp><rb>本</rb><rp>（</rp><rt class="ThirtyRt">ほん</rt><rp>）</rp><rb>語</rb><rp>（</rp><rt class="ThirtyRt">ご</rt><rp>）</rp></ruby>：こんにちは！ミゲルのサンドボックスへようこそ！このページで、<ruby><rb>Unicode</rb><rp>（</rp><rt class="ThirtyRt">ユニコード</rt><rp>）</rp></ruby>の<ruby><rb>実</rb><rp>（</rp><rt class="ThirtyRt">じっ</rt><rp>）</rp><rb>験</rb><rp>（</rp><rt class="ThirtyRt">けん</rt><rp>）</rp></ruby>します！たくさんの<ruby><rb>文</rb><rp>（</rp><rt class="ThirtyRt">も</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>は<ruby><rb>専</rb><rp>（</rp><rt class="ThirtyRt">せん</rt><rp>）</rp><rb>門</rb><rp>（</rp><rt class="ThirtyRt">もん</rt><rp>）</rp><rb>的</rb><rp>（</rp><rt class="ThirtyRt">てき</rt><rp>）</rp></ruby>なフォントが<ruby><rb>必</rb><rp>（</rp><rt class="ThirtyRt">ひつ</rt><rp>）</rp><rb>要</rb><rp>（</rp><rt class="ThirtyRt">よう</rt><rp>）</rp></ruby>です。
+<ruby><rb>日</rb><rp>（</rp><rt class="ThirtyRt">に</rt><rp>）</rp><rb>本</rb><rp>（</rp><rt class="ThirtyRt">ほん</rt><rp>）</rp><rb>語</rb><rp>（</rp><rt
+        class="ThirtyRt">ご</rt><rp>）</rp></ruby>：こんにちは！ミゲルのサンドボックスへようこそ！このページで、<ruby><rb>Unicode</rb><rp>（</rp><rt
+        class="ThirtyRt">ユニコード</rt><rp>）</rp></ruby>の<ruby><rb>実</rb><rp>（</rp><rt class="ThirtyRt">じっ</rt><rp>）</rp><rb>験</rb><rp>（</rp><rt
+        class="ThirtyRt">けん</rt><rp>）</rp></ruby>します！たくさんの<ruby><rb>文</rb><rp>（</rp><rt class="ThirtyRt">も</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt
+        class="ThirtyRt">じ</rt><rp>）</rp></ruby>は<ruby><rb>専</rb><rp>（</rp><rt class="ThirtyRt">せん</rt><rp>）</rp><rb>門</rb><rp>（</rp><rt
+        class="ThirtyRt">もん</rt><rp>）</rp><rb>的</rb><rp>（</rp><rt class="ThirtyRt">てき</rt><rp>）</rp></ruby>なフォントが<ruby><rb>必</rb><rp>（</rp><rt
+        class="ThirtyRt">ひつ</rt><rp>）</rp><rb>要</rb><rp>（</rp><rt class="ThirtyRt">よう</rt><rp>）</rp></ruby>です。
 </p>
-<a lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1" href="#TOC"><ruby><rb>目</rb><rp>（</rp><rt class="ThirtyRt">もく</rt><rp>）</rp><rb>次</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby></a>
+<a lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1" href="#TOC"><ruby><rb>目</rb><rp>（</rp><rt class="ThirtyRt">もく</rt><rp>）</rp><rb>次</rb><rp>（</rp><rt
+        class="ThirtyRt">じ</rt><rp>）</rp></ruby></a>
 <div id="TOC" class="TOC" style="border:1px solid black; padding: 10pt; width: max-content;">
-	<h2><ruby><rb>目</rb><rp>（</rp><rt class="ThirtyRt">もく</rt><rp>）</rp><rb>次</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby></h2>
+	<h2><ruby><rb>目</rb><rp>（</rp><rt class="ThirtyRt">もく</rt><rp>）</rp><rb>次</rb><rp>（</rp><rt
+            class="ThirtyRt">じ</rt><rp>）</rp></ruby></h2>
 	<ol>
-		<li lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1"><ruby><rb>雑</rb><rp>（</rp><rt class="ThirtyRt">ざつ</rt><rp>）</rp><rb>事</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>
+		<li lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1"><ruby><rb>雑</rb><rp>（</rp><rt
+                class="ThirtyRt">ざつ</rt><rp>）</rp><rb>事</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>
 			<ol>
-				<li lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1"><a href="#CJK互換用文字"><ruby><rb>Ｃ</rb><rp>（</rp><rt class="ThirtyRt">シー</rt><rp>）</rp><rb>Ｊ</rb><rp>（</rp><rt class="ThirtyRt">ジェー</rt><rp>）</rp><rb>Ｋ</rb><rp>（</rp><rt class="ThirtyRt">ケー</rt><rp>）</rp><rb>互</rb><rp>（</rp><rt class="ThirtyRt">ご</rt><rp>）</rp><rb>換</rb><rp>（</rp><rt class="ThirtyRt">かん</rt><rp>）</rp><rb>用</rb><rp>（</rp><rt class="ThirtyRt">よう</rt><rp>）</rp><rb>文字</rb><rp>（</rp><rt class="ThirtyRt">もじ</rt><rp>）</rp></ruby></a></li>
-				<li lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1"><a href="#異体字セレクタ"><ruby><rb>異</rb><rp>（</rp><rt class="ThirtyRt">い</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt class="ThirtyRt">たい</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>セレクタ</a></li>
-				<li lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1"><a href="#拡張新字体"><ruby><rb>拡</rb><rp>（</rp><rt class="ThirtyRt">かく</rt><rp>）</rp><rb>張</rb><rp>（</rp><rt class="ThirtyRt">ちょう</rt><rp>）</rp><rb>新</rb><rp>（</rp><rt class="ThirtyRt">しん</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt class="ThirtyRt">たい</rt><rp>）</rp></ruby></a></li>
-				<li lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1"><a href="#略字と、俗字と、面白い異体字"><ruby><rb>略</rb><rp>（</rp><rt class="ThirtyRt">りゃく</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>と、<ruby><rb>俗</rb><rp>（</rp><rt class="ThirtyRt">ぞく</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>と、<ruby><rb>面</rb><rp>（</rp><rt class="ThirtyRt">おも</rt><rp>）</rp><rb>白</rb><rp>（</rp><rt class="ThirtyRt">しろ</rt><rp>）</rp></ruby>い<ruby><rb>異</rb><rp>（</rp><rt class="ThirtyRt">い</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt class="ThirtyRt">たい</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby></a></li>
-				<li lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1"><a href="#平仮名の字源"><ruby><rb>平</rb><rp>（</rp><rt class="ThirtyRt">ひら</rt><rp>）</rp><rb>仮</rb><rp>（</rp><rt class="ThirtyRt">が</rt><rp>）</rp><rb>名</rb><rp>（</rp><rt class="ThirtyRt">な</rt><rp>）</rp></ruby>の<ruby><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp><rb>源</rb><rp>（</rp><rt class="ThirtyRt">げん</rt><rp>）</rp></ruby></a></li>
-				<li lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1"><a href="#変体仮名の例文"><ruby><rb>変</rb><rp>（</rp><rt class="ThirtyRt">へん</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt class="ThirtyRt">たい</rt><rp>）</rp><rb>仮</rb><rp>（</rp><rt class="ThirtyRt">が</rt><rp>）</rp><rb>名</rb><rp>（</rp><rt class="ThirtyRt">な</rt><rp>）</rp></ruby>の<ruby><rb>例</rb><rp>（</rp><rt class="ThirtyRt">れい</rt><rp>）</rp><rb>文</rb><rp>（</rp><rt class="ThirtyRt">ぶん</rt><rp>）</rp></ruby></a></li>
+				<li lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1"><a href="#CJK互換用文字"><ruby><rb>Ｃ</rb><rp>（</rp><rt
+                        class="ThirtyRt">シー</rt><rp>）</rp><rb>Ｊ</rb><rp>（</rp><rt class="ThirtyRt">ジェー</rt><rp>）</rp><rb>Ｋ</rb><rp>（</rp><rt
+                        class="ThirtyRt">ケー</rt><rp>）</rp><rb>互</rb><rp>（</rp><rt class="ThirtyRt">ご</rt><rp>）</rp><rb>換</rb><rp>（</rp><rt
+                        class="ThirtyRt">かん</rt><rp>）</rp><rb>用</rb><rp>（</rp><rt class="ThirtyRt">よう</rt><rp>）</rp><rb>文字</rb><rp>（</rp><rt
+                        class="ThirtyRt">もじ</rt><rp>）</rp></ruby></a></li>
+				<li lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1"><a href="#異体字セレクタ"><ruby><rb>異</rb><rp>（</rp><rt
+                        class="ThirtyRt">い</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt class="ThirtyRt">たい</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt
+                        class="ThirtyRt">じ</rt><rp>）</rp></ruby>セレクタ</a></li>
+				<li lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1"><a href="#拡張新字体"><ruby><rb>拡</rb><rp>（</rp><rt
+                        class="ThirtyRt">かく</rt><rp>）</rp><rb>張</rb><rp>（</rp><rt class="ThirtyRt">ちょう</rt><rp>）</rp><rb>新</rb><rp>（</rp><rt
+                        class="ThirtyRt">しん</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt
+                        class="ThirtyRt">たい</rt><rp>）</rp></ruby></a></li>
+				<li lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1"><a href="#略字と、俗字と、面白い異体字"><ruby><rb>略</rb><rp>（</rp><rt
+                        class="ThirtyRt">りゃく</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>と、<ruby><rb>俗</rb><rp>（</rp><rt
+                        class="ThirtyRt">ぞく</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>と、<ruby><rb>面</rb><rp>（</rp><rt
+                        class="ThirtyRt">おも</rt><rp>）</rp><rb>白</rb><rp>（</rp><rt class="ThirtyRt">しろ</rt><rp>）</rp></ruby>い<ruby><rb>異</rb><rp>（</rp><rt
+                        class="ThirtyRt">い</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt class="ThirtyRt">たい</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt
+                        class="ThirtyRt">じ</rt><rp>）</rp></ruby></a></li>
+				<li lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1"><a href="#平仮名の字源"><ruby><rb>平</rb><rp>（</rp><rt
+                        class="ThirtyRt">ひら</rt><rp>）</rp><rb>仮</rb><rp>（</rp><rt class="ThirtyRt">が</rt><rp>）</rp><rb>名</rb><rp>（</rp><rt
+                        class="ThirtyRt">な</rt><rp>）</rp></ruby>の<ruby><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp><rb>源</rb><rp>（</rp><rt
+                        class="ThirtyRt">げん</rt><rp>）</rp></ruby></a></li>
+				<li lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1"><a href="#変体仮名の例文"><ruby><rb>変</rb><rp>（</rp><rt
+                        class="ThirtyRt">へん</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt class="ThirtyRt">たい</rt><rp>）</rp><rb>仮</rb><rp>（</rp><rt
+                        class="ThirtyRt">が</rt><rp>）</rp><rb>名</rb><rp>（</rp><rt class="ThirtyRt">な</rt><rp>）</rp></ruby>の<ruby><rb>例</rb><rp>（</rp><rt
+                        class="ThirtyRt">れい</rt><rp>）</rp><rb>文</rb><rp>（</rp><rt class="ThirtyRt">ぶん</rt><rp>）</rp></ruby></a></li>
 			</ol>
 
-		<li lang="vi-Hani-VN" xml:lang="vi-Hani-VN" class="viFonts1"><a href="#Tiếng_Việt"><ruby><rb>㗂</rb><rp>(</rp><rt class="VietRt">Tiếng</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp></ruby></a>
+		<li lang="vi-Hani-VN" xml:lang="vi-Hani-VN" class="viFonts1"><a href="#Tiếng_Việt"><ruby><rb>㗂</rb><rp>(</rp><rt
+                class="VietRt">Tiếng</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp></ruby></a>
 			<ol>
-				<li lang="vi-Hani-VN" xml:lang="vi-Hani-VN" class="viFonts1"><a href="#Số_từ_trong_Tiếng_Việt"><ruby><rb>數</rb><rp>(</rp><rt class="VietRt">Số</rt><rp>)</rp><rb>詞</rb><rp>(</rp><rt class="VietRt">từ</rt><rp>)</rp></ruby><ruby><rb>𥪝</rb><rp>(</rp><rt class="VietRt">trong</rt><rp>)</rp></ruby><ruby><rb>㗂</rb><rp>(</rp><rt class="VietRt">Tiếng</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp></ruby></a></li>
-				<li lang="vi-Hani-VN" xml:lang="vi-Hani-VN" class="viFonts1"><a href="#Từ_vựng"><ruby><rb>詞</rb><rp>(</rp><rt class="VietRt">Từ</rt><rp>)</rp><rb>彙</rb><rp>(</rp><rt class="VietRt">vựng</rt><rp>)</rp></ruby></a></li>
+				<li lang="vi-Hani-VN" xml:lang="vi-Hani-VN" class="viFonts1"><a href="#Số_từ_trong_Tiếng_Việt"><ruby><rb>數</rb><rp>(</rp><rt
+                        class="VietRt">Số</rt><rp>)</rp><rb>詞</rb><rp>(</rp><rt class="VietRt">từ</rt><rp>)</rp></ruby><ruby><rb>𥪝</rb><rp>(</rp><rt
+                        class="VietRt">trong</rt><rp>)</rp></ruby><ruby><rb>㗂</rb><rp>(</rp><rt
+                        class="VietRt">Tiếng</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp></ruby></a></li>
+				<li lang="vi-Hani-VN" xml:lang="vi-Hani-VN" class="viFonts1"><a href="#Từ_vựng"><ruby><rb>詞</rb><rp>(</rp><rt
+                        class="VietRt">Từ</rt><rp>)</rp><rb>彙</rb><rp>(</rp><rt class="VietRt">vựng</rt><rp>)</rp></ruby></a></li>
 			</ol>
 		</li>
-		<li lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1"><a href="#日本語"><ruby><rb>日</rb><rp>（</rp><rt class="ThirtyRt">に</rt><rp>）</rp><rb>本</rb><rp>（</rp><rt class="ThirtyRt">ほん</rt><rp>）</rp><rb>語</rb><rp>（</rp><rt class="ThirtyRt">ご</rt><rp>）</rp></ruby></a></li>
-		<li lang="ryu-Jpan-JP" xml:lang="ryu-Jpan-JP" class="jaFonts1"><a href="#沖縄口"><ruby><rb>沖</rb><rp>（</rp><rt class="ThirtyRt">うち</rt><rp>）</rp><rb>縄</rb><rp>（</rp><rt class="ThirtyRt">なー</rt><rp>）</rp><rb>口</rb><rp>（</rp><rt class="ThirtyRt">ぐち</rt><rp>）</rp></ruby></a></li>
+		<li lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1"><a href="#日本語"><ruby><rb>日</rb><rp>（</rp><rt
+                class="ThirtyRt">に</rt><rp>）</rp><rb>本</rb><rp>（</rp><rt class="ThirtyRt">ほん</rt><rp>）</rp><rb>語</rb><rp>（</rp><rt
+                class="ThirtyRt">ご</rt><rp>）</rp></ruby></a></li>
+		<li lang="ryu-Jpan-JP" xml:lang="ryu-Jpan-JP" class="jaFonts1"><a href="#沖縄口"><ruby><rb>沖</rb><rp>（</rp><rt
+                class="ThirtyRt">うち</rt><rp>）</rp><rb>縄</rb><rp>（</rp><rt class="ThirtyRt">なー</rt><rp>）</rp><rb>口</rb><rp>（</rp><rt
+                class="ThirtyRt">ぐち</rt><rp>）</rp></ruby></a></li>
 		<li lang="ko-Kore-KR" xml:lang="ko-Kore-KR" class="koFonts1"><a href="#韓國語_(國漢文混用體)"><ruby><rb>韓</rb><rp>(</rp><rt>한</rt><rp>)</rp><rb>國</rb><rp>(</rp><rt>국</rt><rp>)</rp><rb>語</rb><rp>(</rp><rt>어</rt><rp>)</rp></ruby> (<ruby><rb>國</rb><rp>(</rp><rt>국</rt><rp>)</rp><rb>漢</rb><rp>(</rp><rt>한</rt><rp>)</rp><rb>文</rb><rp>(</rp><rt>문</rt><rp>)</rp><rb>混</rb><rp>(</rp><rt>혼</rt><rp>)</rp><rb>用</rb><rp>(</rp><rt>용</rt><rp>)</rp><rb>體</rb><rp>(</rp><rt>체</rt><rp>)</rp></ruby>)</a></li>
 		<li lang="ko-Hang-KR" xml:lang="ko-Hang-KR" class="koFonts1"><a href="#한국어_(한글전용)">한국어 (한글전용)</a></li>
 		<li lang="zh" xml:lang="zh" class="TWFonts1">中文
 			<ol>
-				<li lang="zh-cmn-Hant-TW" xml:lang="zh-cmn-Hant-TW" class="TWFonts1"><a href="#官話（臺灣）">官話（臺灣）</a></li>
-				<li lang="zh-cmn-Hans-CN" xml:lang="zh-cmn-Hans-CN" class="CNFonts1"><a href="#官话（中国）">官话（中国）</a></li>
-				<li lang="zh-cmn-Hant-HK" xml:lang="zh-cmn-Hant-HK" class="HKFonts1"><a href="#官話（香港）">官話（香港）</a></li>
-				<li lang="zh-yue-Hant-HK" xml:lang="zh-yue-Hant-HK" class="HKFonts1"><a href="#廣東話（香港）">廣東話（香港）</a></li>
+				<li lang="zh-cmn-Hant-TW" xml:lang="zh-cmn-Hant-TW" class="TWFonts1"><a
+                        href="#官話（臺灣）">官話（臺灣）</a></li>
+				<li lang="zh-cmn-Hans-CN" xml:lang="zh-cmn-Hans-CN" class="CNFonts1"><a
+                        href="#官话（中国）">官话（中国）</a></li>
+				<li lang="zh-cmn-Hant-HK" xml:lang="zh-cmn-Hant-HK" class="HKFonts1"><a
+                        href="#官話（香港）">官話（香港）</a></li>
+				<li lang="zh-yue-Hant-HK" xml:lang="zh-yue-Hant-HK" class="HKFonts1"><a
+                        href="#廣東話（香港）">廣東話（香港）</a></li>
 			</ol>
 		</li>
 	</ol>
@@ -164,32 +243,60 @@ li:before {
 
 <span lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1">
 <p style="font-size: 20pt">テスト：</p>𥛭 禮 𥘷 礼 𥙪  𥘶
-<p style="font-size: 40pt; font-family: 'source-han-serif-japanese';">⿺辶⿳穴⿰月⿰⿲⿱幺長⿱言馬⿱幺長刂心⿺辶⿳穴⿰月⿰⿲⿱幺長⿱言馬⿱幺長刂心麵、<ruby><rb>⿺辶⿳穴⿰月⿰⿲⿱幺長⿱言馬⿱幺長刂心</rb><rp>（</rp><rt class="ThirtyRt">ビャン</rt><rp>）</rp><rb>⿺辶⿳穴⿰月⿰⿲⿱幺長⿱言馬⿱幺長刂心</rb><rp>（</rp><rt class="ThirtyRt">ビャン</rt><rp>）</rp style=>麺<rb></rb><rp>（</rp><rt class="ThirtyRt">めん</rt><rp>）</rp></ruby>、⿺辶⿳穴⿰月⿰⿲⿱幺长⿱言马⿱幺长刂心⿺辶⿳穴⿰月⿰⿲⿱幺长⿱言马⿱幺长刂心面、𰻞𰻝、⿸广マ</p>
+<p style="font-size: 40pt; font-family: 'source-han-serif-japanese';">⿺辶⿳穴⿰月⿰⿲⿱幺長⿱言馬⿱幺長刂心⿺辶⿳穴⿰月⿰⿲⿱幺長⿱言馬⿱幺長刂心麵、<ruby><rb>⿺辶⿳穴⿰月⿰⿲⿱幺長⿱言馬⿱幺長刂心</rb><rp>（</rp><rt
+        class="ThirtyRt">ビャン</rt><rp>）</rp><rb>⿺辶⿳穴⿰月⿰⿲⿱幺長⿱言馬⿱幺長刂心</rb><rp>（</rp><rt
+        class="ThirtyRt">ビャン</rt><rp>）</rp style=>麺<rb></rb><rp>（</rp><rt class="ThirtyRt">めん</rt><rp>）</rp></ruby>、⿺辶⿳穴⿰月⿰⿲⿱幺长⿱言马⿱幺长刂心⿺辶⿳穴⿰月⿰⿲⿱幺长⿱言马⿱幺长刂心面、𰻞𰻝、⿸广マ</p>
 <p style="font-size: 15pt">
 神福殺教芦田 𩰪 衆󠄇衆󠄈 𥐉, 𥐇, 𥐍, 𬑶
 この項目に含まれる文字「芦」は、オペレーティングシステムやブラウザなどの環境により表示が異なります。 「芦」の文字は公式の表記「Kanji for another OS version - ashi.svg」と異なる可能性があります。芦屋の「芦」は、正確には「戸」の部分が旧字（「戶」）。
-<p style="font-size: 20pt"><span id="CJK互換用文字"><ruby><rb>Ｃ</rb><rp>（</rp><rt class="ThirtyRt">シー</rt><rp>）</rp><rb>Ｊ</rb><rp>（</rp><rt class="ThirtyRt">ジェー</rt><rp>）</rp><rb>Ｋ</rb><rp>（</rp><rt class="ThirtyRt">ケー</rt><rp>）</rp><rb>互</rb><rp>（</rp><rt class="ThirtyRt">ご</rt><rp>）</rp><rb>換</rb><rp>（</rp><rt class="ThirtyRt">かん</rt><rp>）</rp><rb>用</rb><rp>（</rp><rt class="ThirtyRt">よう</rt><rp>）</rp><rb>文字</rb><rp>（</rp><rt class="ThirtyRt">もじ</rt><rp>）</rp></ruby>：</span></p>
+<p style="font-size: 20pt"><span id="CJK互換用文字"><ruby><rb>Ｃ</rb><rp>（</rp><rt class="ThirtyRt">シー</rt><rp>）</rp><rb>Ｊ</rb><rp>（</rp><rt
+        class="ThirtyRt">ジェー</rt><rp>）</rp><rb>Ｋ</rb><rp>（</rp><rt class="ThirtyRt">ケー</rt><rp>）</rp><rb>互</rb><rp>（</rp><rt
+        class="ThirtyRt">ご</rt><rp>）</rp><rb>換</rb><rp>（</rp><rt class="ThirtyRt">かん</rt><rp>）</rp><rb>用</rb><rp>（</rp><rt
+        class="ThirtyRt">よう</rt><rp>）</rp><rb>文字</rb><rp>（</rp><rt class="ThirtyRt">もじ</rt><rp>）</rp></ruby>：</span></p>
 <p style="font-size: 15pt">
 欄欄、廊廊、朗朗、虜虜、類類、猪猪、神神、祥祥、福福福、諸諸、都都、侮侮、僧僧、勉勉、勤勤、卑卑、嘆嘆、器器、墨墨、層層、悔悔、憎憎、懲懲、敏敏、暑暑、梅梅、海海、渚渚、漢漢漢、煮煮、琢琢、碑碑、社社、祉祉、祈祈、祐祐、祖祖、祝祝、禍禍、禎禎、穀穀、突突、節節、練練、繁繁、署署、者者者者、臭臭、著著、視視、謁謁、謹謹、賓賓、贈贈、逸逸、難難、響響、殺殺殺殺、海海海、慎慎慎、瀞瀞瀞、流流流流、画画、令令、零零、讀讀、売売、忍忍、飯飯、港港、高髙、次次、最最、再再、六六、青靑、難難難、艹艹艹、異異異、你你、令令、辶辶⻍⻎⻌、刃刃、女女、姬姬、龜龜龜龜、冬冬、将将、龍龍、直直直、器器、品𠯮、当当、樂樂樂樂、唐唐、着着、爫爫、辞辞
 </p>
-<p style="font-size: 20pt"><span id="異体字セレクタ"><ruby><rb>異</rb><rp>（</rp><rt class="ThirtyRt">い</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt class="ThirtyRt">たい</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>セレクタ：</span></p>
+<p style="font-size: 20pt"><span id="異体字セレクタ"><ruby><rb>異</rb><rp>（</rp><rt class="ThirtyRt">い</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt
+        class="ThirtyRt">たい</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>セレクタ：</span></p>
 <p style="font-size: 15pt">
 文文󠄀文󠄁文󠄂文󠄃、芦芦󠄀芦󠄁芦󠄂芦󠄃芦󠄄芦󠄅芦󠄆芦󠄇芦󠄈芦󠄉芦󠄊芦󠄋芦󠄌芦󠄍芦󠄎芦󠄏、誤誤󠄀誤󠄁誤󠄂誤󠄃誤󠄄、半半󠄀半󠄁、畔畔󠄀畔󠄁、伴伴󠄀伴󠄁、餃餃󠄀餃󠄁、害害󠄀害󠄁害󠄂害󠄃、枦枦󠄀枦󠄁、所所󠄀所󠄁、編編󠄀編󠄁、飯飯󠄀飯󠄁飯󠄂、餅餅󠄀餅󠄁、港港󠄀港󠄁、饗饗󠄀饗󠄁饗󠄂饗󠄃、畝畝󠄀畝󠄁、飽飽󠄀飽󠄁、飾飾󠄀飾󠄁、飴飴󠄀飴󠄁、次次󠄀次󠄁次󠄂、漢漢󠄀漢󠄁漢󠄂漢󠄃漢󠄄漢󠄅漢󠄆漢󠄇漢󠄈漢󠄉漢󠄊漢󠄋漢󠄌漢󠄍漢󠄎漢󠄏、最最󠄀最󠄁、謙謙󠄀謙󠄁、嫌嫌󠄀嫌󠄁、再再󠄀再󠄁、講講󠄀講󠄁、受受󠄀受󠄁、叉叉󠄀叉󠄁、及及󠄀及󠄁、餌餌󠄀餌󠄁餌󠄂餌󠄃、卿卿󠄀卿󠄁卿󠄂、斉斉󠄀斉󠄁、訊訊󠄀訊󠄁訊󠄂、訒訒󠄀訒󠄁、訝訝󠄀訝󠄁訝󠄂、評評󠄀評󠄁、公公󠄀公󠄁、八八󠄀八󠄁、全全󠄀全󠄁全󠄂全󠄃全󠄄全󠄅全󠄆全󠄇全󠄈全󠄉全󠄊全󠄋、具具󠄀具󠄁、兼兼󠄀兼󠄁、福福󠄀福󠄁、平平󠄀平󠄁、松松󠄀松󠄁、阪阪󠄀阪󠄁、註註󠄀註󠄁、角角󠄀角󠄁、親親󠄀親󠄁、訟訟󠄀訟󠄁、認認󠄀認󠄁、殺殺󠄀殺󠄁、者者󠄀者󠄁、耒耒󠄀耒󠄁、考考󠄀考󠄁、建建󠄀建󠄁、適適󠄀適󠄁、選選󠄀選󠄁、遺遺󠄀遺󠄁、朝朝󠄀朝󠄁朝󠄂朝󠄃朝󠄄、芸芸󠄀芸󠄁芸󠄂芸󠄃芸󠄄、祇祇󠄀祇󠄁祇󠄂祇󠄃祇󠄄祇󠄅祇󠄆祇󠄇祇󠄈祇󠄉、祗祗󠄀祗󠄁祗󠄂祗󠄃祗󠄄祗󠄅祗󠄆祗󠄇祗󠄈祗󠄉、祖祖󠄀祖󠄁祖󠄂祖󠄃祖󠄄祖󠄅祖󠄆祖󠄇祖󠄈祖󠄉、異異󠄀異󠄁異󠄂異󠄃異󠄄異󠄅異󠄆異󠄇異󠄈異󠄉、祘祘󠄀祘󠄁祘󠄂祘󠄃祘󠄄祘󠄅祘󠄆祘󠄇祘󠄈祘󠄉、祥祥󠄀祥󠄁祥󠄂、禰禰󠄀禰󠄁禰󠄂禰󠄃禰󠄄禰󠄅禰󠄆禰󠄇禰禰󠄉、你你󠄀你󠄁你󠄂你󠄃你󠄄、艹艹󠄀艹󠄁艹󠄂艹󠄃艹󠄄、令令󠄀令󠄁令󠄂祖󠄃祖󠄄祖󠄅祖󠄆祖󠄇祖󠄈祖󠄉、辶辶󠄀辶󠄁、菓菓󠄀菓󠄁、華華󠄀華󠄁華󠄂華󠄃華󠄄華󠄅華󠄆華󠄇華󠄈華󠄉、分分󠄀分󠄁、刃刃󠄀刃󠄁、函函󠄀函󠄁、苅苅󠄀苅󠄁、薩薩󠄀薩󠄁、蘒蘒󠄀蘒󠄁蘒󠄂、大大󠄀大󠄁、小小󠄀小󠄁小󠄂、女女󠄀女󠄁、姬姬󠄀姬󠄁、姉姉󠄀姉󠄁、那那󠄀那󠄁、娜娜󠄀娜󠄁、殺殺󠄀殺󠄁、曜曜󠄀曜󠄁、書書󠄀書󠄁、雨雨󠄀雨󠄁雨󠄂、廣廣󠄀廣󠄁廣󠄂廣󠄃廣󠄄廣󠄅廣󠄆廣󠄇廣󠄈廣󠄉廣󠄊廣󠄋廣󠄌廣󠄍廣󠄎廣󠄏、化化󠄀化󠄁、花花󠄀花󠄁、囮囮󠄀囮󠄁、博博󠄀博󠄁、礼礼󠄀礼󠄁、禮禮󠄀禮󠄁、龜龜󠄀龜󠄁、将将󠄀将󠄁将󠄂、暖暖󠄀暖󠄁、暗暗󠄀暗󠄁、竆竆󠄀竆󠄁、空空󠄀空󠄁、穴穴󠄀穴󠄁穴󠄂、稱稱󠄀稱󠄁稱󠄂、永永󠄀永󠄁、氺氺󠄀氺󠄁、氈氈󠄀氈󠄁氈󠄂、直直󠄀直󠄁、珊珊󠄀珊󠄁珊󠄂、今今󠄀今󠄁、節節󠄀節󠄁節󠄂、箭箭󠄀箭󠄁、築築󠄀築󠄁、篇篇󠄀篇󠄁、龍龍󠄀龍󠄁龍󠄂龍󠄃龍󠄄龍󠄅龍󠄆龍󠄇龍󠄈龍󠄉龍󠄊龍󠄋龍󠄌龍󠄍龍󠄎龍󠄏、難難󠄀難󠄁難󠄂難󠄃難󠄄難󠄅難󠄆難󠄇難󠄈難󠄉、器器󠄀器󠄁器󠄂器󠄃器󠄄器󠄅器󠄆器󠄇器󠄈器󠄉器󠄊器󠄋器󠄌器󠄍器󠄎器󠄏、外外󠄀外󠄁外󠄂外󠄃外󠄄外󠄅外󠄆外󠄇外󠄈外󠄉外󠄊外󠄋外󠄌外󠄍外󠄎外󠄏、爫爫󠄀爫󠄁爫󠄂爫󠄃、期期󠄀期󠄁期󠄂期󠄃、四四󠄀四󠄁四󠄂、草草󠄀草󠄁草󠄂草󠄃、㭒㭒󠄀㭒󠄁㭒󠄂、㴄㴄󠄀㴄󠄁、㯍㯍󠄀㯍󠄁㯍󠄂㯍󠄃、䖇䖇󠄀䖇󠄁䖇󠄂、䙴䙴󠄀䙴󠄁䙴󠄂䙴󠄃䙴󠄄、㒹㒹󠄀㒹󠄁㒹󠄂、說說󠄀說󠄁說󠄂說󠄃、誨誨󠄀誨󠄁誨󠄂誨󠄃、祠祠󠄀祠󠄁祠󠄂祠󠄃、祥祥󠄀祥󠄁祥󠄂祥󠄃祥󠄄祥󠄅祥󠄆祥󠄇祥󠄈祥󠄉祥󠄊祥󠄋祥󠄌祥󠄍祥󠄎祥󠄏、灘灘󠄀灘󠄁灘󠄂灘󠄃灘󠄄灘󠄅灘󠄆灘󠄇灘󠄈灘󠄉灘󠄊灘󠄋灘󠄌灘󠄍灘󠄎灘󠄏、矗矗󠄀矗󠄁矗󠄂矗󠄃矗󠄄矗󠄅矗󠄆矗󠄇矗󠄈矗󠄉矗󠄊矗󠄋矗󠄌矗󠄍矗󠄎矗󠄏、記記󠄀記󠄁記󠄂記󠄃記󠄄記󠄅記󠄆記󠄇記󠄈記󠄉記󠄊記󠄋記󠄌記󠄍記󠄎記󠄏、起起󠄀起󠄁起󠄂起󠄃起󠄄起󠄅起󠄆起󠄇起󠄈起󠄉起󠄊起󠄋起󠄌起󠄍起󠄎起󠄏、漫漫󠄀漫󠄁漫󠄂漫󠄃漫󠄄漫󠄅漫󠄆漫󠄇漫󠄈漫󠄉漫󠄊漫󠄋漫󠄌漫󠄍漫󠄎漫󠄏、衆衆󠄀衆󠄁衆󠄂衆󠄃衆󠄄衆󠄅衆󠄆衆󠄇衆󠄈衆󠄉衆󠄊衆󠄋衆󠄌衆󠄍衆󠄎衆󠄏衆󠄐衆󠄑衆󠄒衆󠄓衆󠄔衆󠄕衆󠄖衆󠄗衆󠄘衆󠄙衆󠄚、煙煙󠄀煙󠄁煙󠄂煙󠄃煙󠄄煙󠄅煙󠄆煙󠄇煙󠄈煙󠄉煙󠄊煙󠄋煙󠄌煙󠄍煙󠄎煙󠄏、五五󠄀五󠄁五󠄂五󠄃五󠄄五󠄅五󠄆五󠄇五󠄈五󠄉五󠄊五󠄋五󠄌五󠄍五󠄎五󠄏、典典󠄀典󠄁典󠄂典󠄃典󠄄典󠄅典󠄆典󠄇典󠄈典󠄉典󠄊典󠄋典󠄌典󠄍典󠄎典󠄏、家家󠄀家󠄁家󠄂家󠄃家󠄄家󠄅、外外󠄀外󠄁外󠄂外󠄃外󠄄外󠄅外󠄆外󠄇外󠄈外󠄉外󠄊外󠄋外󠄌外󠄍外󠄎外󠄏、外外󠄀外󠄁外󠄂外󠄃外󠄄外󠄅外󠄆外󠄇外󠄈外󠄉外󠄊外󠄋外󠄌外󠄍外󠄎外󠄏、外外󠄀外󠄁外󠄂外󠄃外󠄄外󠄅外󠄆外󠄇外󠄈外󠄉外󠄊外󠄋外󠄌外󠄍外󠄎外󠄏、外外󠄀外󠄁外󠄂外󠄃外󠄄外󠄅外󠄆外󠄇外󠄈外󠄉外󠄊外󠄋外󠄌外󠄍外󠄎外󠄏、外外󠄀外󠄁外󠄂外󠄃外󠄄外󠄅外󠄆外󠄇外󠄈外󠄉外󠄊外󠄋外󠄌外󠄍外󠄎外󠄏、外外󠄀外󠄁外󠄂外󠄃外󠄄外󠄅外󠄆外󠄇外󠄈外󠄉外󠄊外󠄋外󠄌外󠄍外󠄎外󠄏、外外󠄀外󠄁外󠄂外󠄃外󠄄外󠄅外󠄆外󠄇外󠄈外󠄉外󠄊外󠄋外󠄌外󠄍外󠄎外󠄏、外外󠄀外󠄁外󠄂外󠄃外󠄄外󠄅外󠄆外󠄇外󠄈外󠄉外󠄊外󠄋外󠄌外󠄍外󠄎外󠄏、外外󠄀外󠄁外󠄂外󠄃外󠄄外󠄅外󠄆外󠄇外󠄈外󠄉外󠄊外󠄋外󠄌外󠄍外󠄎外󠄏、葛葛󠄀葛󠄁葛󠄂葛󠄃葛󠄄葛󠄅葛󠄆葛󠄇葛󠄈葛󠄉葛󠄊葛󠄋葛󠄌葛󠄍葛󠄎葛󠄏、辻辻󠄀辻󠄁辻󠄂辻󠄃辻󠄄辻󠄅辻󠄆辻󠄇辻󠄈辻󠄉辻󠄊辻󠄋辻󠄌辻󠄍辻󠄎辻󠄏、海海󠄀海󠄁海󠄂海󠄃海󠄄海󠄅海󠄆海󠄇海󠄈海󠄉海󠄊海󠄋海󠄌海󠄍海󠄎海󠄏、嘲嘲󠄀嘲󠄁嘲󠄂嘲󠄃嘲󠄄嘲󠄅嘲󠄆嘲󠄇嘲󠄈嘲󠄉嘲󠄊嘲󠄋嘲󠄌嘲󠄍嘲󠄎嘲󠄏、茨茨󠄀茨󠄁茨󠄂茨󠄃茨󠄄茨󠄅茨󠄆茨󠄇茨󠄈󠄏、次次󠄀次󠄁次󠄂次󠄃次󠄄次󠄅次󠄆次󠄇次󠄈、画画󠄀画󠄁画󠄂画󠄃、
 </p>
-<p style="font-size: 20pt"><span id="拡張新字体"><ruby><rb>拡</rb><rp>（</rp><rt class="ThirtyRt">かく</rt><rp>）</rp><rb>張</rb><rp>（</rp><rt class="ThirtyRt">ちょう</rt><rp>）</rp><rb>新</rb><rp>（</rp><rt class="ThirtyRt">しん</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt class="ThirtyRt">たい</rt><rp>）</rp></ruby>：</span<</p>
+<p style="font-size: 20pt"><span id="拡張新字体"><ruby><rb>拡</rb><rp>（</rp><rt class="ThirtyRt">かく</rt><rp>）</rp><rb>張</rb><rp>（</rp><rt
+        class="ThirtyRt">ちょう</rt><rp>）</rp><rb>新</rb><rp>（</rp><rt class="ThirtyRt">しん</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt
+        class="ThirtyRt">じ</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt class="ThirtyRt">たい</rt><rp>）</rp></ruby>：</span<</p>
 <p style="font-size: 15pt">
 讜𧫆、謳𧦅、鷗鴎、䡱𮝀、嘔呕、齟𪗱、齬𪘚、鹼鹸、鑡𮣁、臍𦜝、齎𮚁、臍𦜝、綠緑、彙彚、祿禄、儘侭、櫨枦、鑪鈩、濾沪、艫舮、驢馿、檜桧、頸頚、鐸鈬、繹䋇、瓔珱、淵渊、簫簘、櫟檪、檔档、櫳槞、籠篭、隴𨻫、櫳槞、嚨𠺠、儱𫣏、曠昿、擡抬、彎弯、礦砿、壺壷、礪砺、賤賎、瀆涜、鑠𮣏、囓𭌰、慫𭞁、攬𭣄、擽𭢫、曩𭧽、鐺𫟰、𨮢𮡹、攣挛、罐𮉸、潑溌、囊嚢、瘻瘘、蠅蝿、繫繋、瞞𥈞、輛輌、倆𠈓、殲殱𫞔、鑽鑚、瑩𭸼、灌潅、饒𩜙、簞箪、、、
 </p>
-<p style="font-size: 20pt"><span id="略字と、俗字と、面白い異体字"><ruby><rb>略</rb><rp>（</rp><rt class="ThirtyRt">りゃく</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>と、<ruby><rb>俗</rb><rp>（</rp><rt class="ThirtyRt">ぞく</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>と、<ruby><rb>面</rb><rp>（</rp><rt class="ThirtyRt">おも</rt><rp>）</rp><rb>白</rb><rp>（</rp><rt class="ThirtyRt">しろ</rt><rp>）</rp></ruby>い<ruby><rb>異</rb><rp>（</rp><rt class="ThirtyRt">い</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt class="ThirtyRt">たい</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>：</span></p>
+<p style="font-size: 20pt"><span id="略字と、俗字と、面白い異体字"><ruby><rb>略</rb><rp>（</rp><rt class="ThirtyRt">りゃく</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt
+        class="ThirtyRt">じ</rt><rp>）</rp></ruby>と、<ruby><rb>俗</rb><rp>（</rp><rt class="ThirtyRt">ぞく</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt
+        class="ThirtyRt">じ</rt><rp>）</rp></ruby>と、<ruby><rb>面</rb><rp>（</rp><rt class="ThirtyRt">おも</rt><rp>）</rp><rb>白</rb><rp>（</rp><rt
+        class="ThirtyRt">しろ</rt><rp>）</rp></ruby>い<ruby><rb>異</rb><rp>（</rp><rt class="ThirtyRt">い</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt
+        class="ThirtyRt">たい</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>：</span></p>
 <p style="font-size: 15pt">
 第㐧、銻𮡪、曜𫞂、監监、緊紧、堅坚、賢䝨、竪竖、藍蓝、籃篮、臨临、品𠯮、職耺𫟉、闘鬦、濾沪、点奌、魚𩵋、喜㐂、傘仐、馬𫠉、鳥𫠓、権权、（図書館）圕𡆥、門门󠄀、開𫔭󠄁、関𬮦、卒卆、働仂、器器󠄄噐、茻𦬇、個㐰𠇂、箇ヶ、飛𠃧、事亊、嘉𬻎𭐒、鼠鼡、鬣𮫋、喬𠳮、龠𠋁、陰隂侌𤽎𠆭𮥏阥𨹉霒𩃬𩬎蔭、船舩、沿㳂、罰罸、脇䏮、興㒷、呂吕、命𠇭𫝇、葉𫟒、淵渊囦、、
 </p>
-<p style="font-size: 15pt"><ruby><rb>芦󠄀</rb><rp>（</rp><rt class="ThirtyRt">あし</rt><rp>）</rp><rb>田</rb><rp>（</rp><rt class="ThirtyRt">だ</rt><rp>）</rp></ruby>さんは<ruby><rb>芦󠄁</rb><rp>（</rp><rt class="ThirtyRt">あし</rt><rp>）</rp><rb>屋</rb><rp>（</rp><rt class="ThirtyRt">や</rt><rp>）</rp></ruby>の<ruby><rb>お</rb><rt class="ThirtyRt"></rt><rb>嬢</rb><rp>（</rp><rt class="ThirtyRt">じょう</rt><rp>）</rp><rb>様</rb><rp>（</rp><rt class="ThirtyRt">さま</rt><rp>）</rp></ruby>だ。</p>
-<p style="font-size: 15pt"><ruby><rb>芸󠄀</rb><rp>（</rp><rt class="ThirtyRt">げい</rt><rp>）</rp><rb>者</rb><rp>（</rp><rt class="ThirtyRt">しゃ</rt><rp>）</rp></ruby>と<ruby><rb>芸󠄂</rb><rp>（</rp><rt class="ThirtyRt">うん</rt><rp>）</rp><rb>亭</rb><rp>（</rp><rt class="ThirtyRt">てい</rt><rp>）</rp></ruby>は<ruby><rb>関</rb><rp>（</rp><rt class="ThirtyRt">かん</rt><rp>）</rp><rb>係</rb><rp>（</rp><rt class="ThirtyRt">けい</rt><rp>）</rp></ruby>ないです。</p>
-<p style="font-size: 15pt"><ruby><rb>東</rb><rp>（</rp><rt class="ThirtyRt">とう</rt><rp>）</rp><rb>京</rb><rp>（</rp><rt class="ThirtyRt">きょう</rt><rp>）</rp><rb>都</rb><rp>（</rp><rt class="ThirtyRt">と</rt><rp>）</rp></ruby><ruby><rb>葛󠄁</rb><rp>（</rp><rt class="ThirtyRt">かつ</rt><rp>）</rp><rb>飾</rb><rp>（</rp><rt class="ThirtyRt">しか</rt><rp>）</rp><rb>区</rb><rp>（</rp><rt class="ThirtyRt">く</rt><rp>）</rp></ruby>と<ruby><rb>奈</rb><rp>（</rp><rt class="ThirtyRt">な</rt><rp>）</rp><rb>良</rb><rp>（</rp><rt class="ThirtyRt">ら</rt><rp>）</rp><rb>県</rb><rp>（</rp><rt class="ThirtyRt">けん</rt><rp>）</rp></ruby><ruby><rb>葛󠄀</rb><rp>（</rp><rt class="ThirtyRt">かつ</rt><rp>）</rp><rb>城</rb><rp>（</rp><rt class="ThirtyRt">らぎ</rt><rp>）</rp><rb>市</rb><rp>（</rp><rt class="ThirtyRt">し</rt><rp>）</rp></ruby>の「葛」は<ruby><rb>異</rb><rp>（</rp><rt class="ThirtyRt">い</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt class="ThirtyRt">たい</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>です。</p>
-<table id="平仮名の字源" border="1" style="font-size: 15pt; text-align: center; writing-mode: vertical-rl; text-orientation: upright;">
+<p style="font-size: 15pt"><ruby><rb>芦󠄀</rb><rp>（</rp><rt class="ThirtyRt">あし</rt><rp>）</rp><rb>田</rb><rp>（</rp><rt
+        class="ThirtyRt">だ</rt><rp>）</rp></ruby>さんは<ruby><rb>芦󠄁</rb><rp>（</rp><rt class="ThirtyRt">あし</rt><rp>）</rp><rb>屋</rb><rp>（</rp><rt
+        class="ThirtyRt">や</rt><rp>）</rp></ruby>の<ruby><rb>お</rb><rt class="ThirtyRt"></rt><rb>嬢</rb><rp>（</rp><rt
+        class="ThirtyRt">じょう</rt><rp>）</rp><rb>様</rb><rp>（</rp><rt class="ThirtyRt">さま</rt><rp>）</rp></ruby>だ。</p>
+<p style="font-size: 15pt"><ruby><rb>芸󠄀</rb><rp>（</rp><rt class="ThirtyRt">げい</rt><rp>）</rp><rb>者</rb><rp>（</rp><rt
+        class="ThirtyRt">しゃ</rt><rp>）</rp></ruby>と<ruby><rb>芸󠄂</rb><rp>（</rp><rt class="ThirtyRt">うん</rt><rp>）</rp><rb>亭</rb><rp>（</rp><rt
+        class="ThirtyRt">てい</rt><rp>）</rp></ruby>は<ruby><rb>関</rb><rp>（</rp><rt class="ThirtyRt">かん</rt><rp>）</rp><rb>係</rb><rp>（</rp><rt
+        class="ThirtyRt">けい</rt><rp>）</rp></ruby>ないです。</p>
+<p style="font-size: 15pt"><ruby><rb>東</rb><rp>（</rp><rt class="ThirtyRt">とう</rt><rp>）</rp><rb>京</rb><rp>（</rp><rt
+        class="ThirtyRt">きょう</rt><rp>）</rp><rb>都</rb><rp>（</rp><rt class="ThirtyRt">と</rt><rp>）</rp></ruby><ruby><rb>葛󠄁</rb><rp>（</rp><rt
+        class="ThirtyRt">かつ</rt><rp>）</rp><rb>飾</rb><rp>（</rp><rt class="ThirtyRt">しか</rt><rp>）</rp><rb>区</rb><rp>（</rp><rt
+        class="ThirtyRt">く</rt><rp>）</rp></ruby>と<ruby><rb>奈</rb><rp>（</rp><rt class="ThirtyRt">な</rt><rp>）</rp><rb>良</rb><rp>（</rp><rt
+        class="ThirtyRt">ら</rt><rp>）</rp><rb>県</rb><rp>（</rp><rt class="ThirtyRt">けん</rt><rp>）</rp></ruby><ruby><rb>葛󠄀</rb><rp>（</rp><rt
+        class="ThirtyRt">かつ</rt><rp>）</rp><rb>城</rb><rp>（</rp><rt class="ThirtyRt">らぎ</rt><rp>）</rp><rb>市</rb><rp>（</rp><rt
+        class="ThirtyRt">し</rt><rp>）</rp></ruby>の「葛」は<ruby><rb>異</rb><rp>（</rp><rt class="ThirtyRt">い</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt
+        class="ThirtyRt">たい</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>です。</p>
+<table id="平仮名の字源" border="1"
+       style="font-size: 15pt; text-align: center; writing-mode: vertical-rl; text-orientation: upright;">
 	<tr>
-		<td colspan="5"><ruby><rb>平</rb><rp>（</rp><rt class="ThirtyRt">ひら</rt><rp>）</rp><rb>仮</rb><rp>（</rp><rt class="ThirtyRt">が</rt><rp>）</rp><rb>名</rb><rp>（</rp><rt class="ThirtyRt">な</rt><rp>）</rp></ruby>の<ruby><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp><rb>源</rb><rp>（</rp><rt class="ThirtyRt">げん</rt><rp>）</rp></ruby></td>
+		<td colspan="5"><ruby><rb>平</rb><rp>（</rp><rt class="ThirtyRt">ひら</rt><rp>）</rp><rb>仮</rb><rp>（</rp><rt
+                class="ThirtyRt">が</rt><rp>）</rp><rb>名</rb><rp>（</rp><rt class="ThirtyRt">な</rt><rp>）</rp></ruby>の<ruby><rb>字</rb><rp>（</rp><rt
+                class="ThirtyRt">じ</rt><rp>）</rp><rb>源</rb><rp>（</rp><rt class="ThirtyRt">げん</rt><rp>）</rp></ruby></td>
 	</tr>
 	<tr>
 		<td>安𛀂あ</td>
@@ -271,68 +378,136 @@ li:before {
 </table>
 
 
-</p>
+    </p>
 
-<p style="font-size: 20pt"><span id="変体仮名の例文"><ruby><rb>変</rb><rp>（</rp><rt>へん</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt>たい</rt><rp>）</rp><rb>仮</rb><rp>（</rp><rt>が</rt><rp>）</rp><rb>名</rb><rp>（</rp><rt>な</rt><rp>）</rp></ruby>の<ruby><rb>例</rb><rp>（</rp><rt>れい</rt><rp>）</rp><rb>文</rb><rp>（</rp><rt>ぶん</rt><rp>）</rp></ruby>：</span></p>
+    <p style="font-size: 20pt"><span id="変体仮名の例文"><ruby><rb>変</rb><rp>（</rp><rt>へん</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt>たい</rt><rp>）</rp><rb>仮</rb><rp>（</rp><rt>が</rt><rp>）</rp><rb>名</rb><rp>（</rp><rt>な</rt><rp>）</rp></ruby>の<ruby><rb>例</rb><rp>（</rp><rt>れい</rt><rp>）</rp><rb>文</rb><rp>（</rp><rt>ぶん</rt><rp>）</rp></ruby>：</span></p>
 <ruby><rb>生</rb><rp>（</rp><rt>き</rt><rp>）</rp><rb>𛁛</rb><rp>（</rp><rt>(そ)</rt><rp>）</rp><rb>𛂦゙</rb><rp>（</rp><rt>(ば)</rt><rp>）</rp></ruby>は<ruby><rb>美味</rb><rp>（</rp><rt>おい</rt><rp>）</rp></ruby>しいと<ruby><rb>思</rb><rp>（</rp><rt>おも</rt><rp>）</rp></ruby>います！<ruby><rb>天</rb><rp>（</rp><rt>てん</rt><rp>）</rp><rb>𛂱゚</rb><rp>（</rp><rt>(ぷ)</rt><rp>）</rp><rb>𛃭</rb><rp>（</rp><rt>(ら)</rt><rp>）</rp></ruby>がとても<ruby><rb>好</rb><rp>（</rp><rt>す</rt><rp>）</rp></ruby>きです！<ruby><rb>𛁈</rb><rp>（</rp><rt>(し)</rt><rp>）</rp></ruby>る<ruby><rb>𛀸</rb><rp>（</rp><rt>(こ)</rt><rp>）</rp></ruby>を<ruby><rb>食</rb><rp>（</rp><rt>た</rt><rp>）</rp></ruby>べたことがないです。<ruby><rb>𛁈</rb><rp>（</rp><rt>(し)</rt><rp>）</rp></ruby>んよし。
-</p>
+    </p>
 
 </span>
 
 
 <span id="Tiếng_Việt" lang="vi-Hani-VN" xml:lang="vi-Hani-VN" class="viFonts1">
-<p style="font-size: 20pt"><ruby><rb>㗂</rb><rp>(</rp><rt class="VietRt">Tiếng</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp></ruby>：</p>
-<p style="font-size: 20pt"><ruby><rb>變</rb><rp>(</rp><rt class="VietRt">biến</rt><rp>)</rp><rb>體</rb><rp>(</rp><rt class="VietRt">thể</rt><rp>)</rp></ruby>：</p>
+<p style="font-size: 20pt"><ruby><rb>㗂</rb><rp>(</rp><rt class="VietRt">Tiếng</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt
+        class="VietRt">Việt</rt><rp>)</rp></ruby>：</p>
+<p style="font-size: 20pt"><ruby><rb>變</rb><rp>(</rp><rt class="VietRt">biến</rt><rp>)</rp><rb>體</rb><rp>(</rp><rt
+        class="VietRt">thể</rt><rp>)</rp></ruby>：</p>
 <p style="font-size: 15pt">
-<ruby><rb>𣷷</rb><rp>(</rp><rt class="VietRt">biển</rt><rp>)</rp></ruby><ruby><rb>𤅶</rb><rp>(</rp><rt class="VietRt">biển</rt><rp>)</rp></ruby>、<ruby><rb>滝</rb><rp>(</rp><rt class="VietRt">sông</rt><rp>)</rp><rb>瀧</rb><rp>(</rp><rt class="VietRt">sông</rt><rp>)</rp></ruby>、<ruby><rb>𧆄</rb><rp>(</rp><rt class="VietRt">thuốc</rt><rp>)</rp><rb>𬟥</rb><rp>(</rp><rt class="VietRt">thuốc</rt><rp>)</rp></ruby>
+<ruby><rb>𣷷</rb><rp>(</rp><rt class="VietRt">biển</rt><rp>)</rp></ruby><ruby><rb>𤅶</rb><rp>(</rp><rt
+        class="VietRt">biển</rt><rp>)</rp></ruby>、<ruby><rb>滝</rb><rp>(</rp><rt class="VietRt">sông</rt><rp>)</rp><rb>瀧</rb><rp>(</rp><rt
+        class="VietRt">sông</rt><rp>)</rp></ruby>、<ruby><rb>𧆄</rb><rp>(</rp><rt class="VietRt">thuốc</rt><rp>)</rp><rb>𬟥</rb><rp>(</rp><rt
+        class="VietRt">thuốc</rt><rp>)</rp></ruby>
 </p>
 <p style="font-size: 15pt">
-<ruby><rb>吀</rb><rp>(</rp><rt class="VietRt">Xin</rt><rp>)</rp><rb>嘲󠄀</rb><rp>(</rp><rt class="VietRt">chào</rt><rp>)</rp></ruby>！<ruby><rb>倅</rb><rp>(</rp><rt class="VietRt">Tôi</rt><rp>)</rp></ruby><ruby><rb>𪜀</rb><rp>(</rp><rt class="VietRt">là</rt><rp>)</rp></ruby>Miguel。<ruby><rb>倅</rb><rp>(</rp><rt class="VietRt">Tôi</rt><rp>)</rp></ruby><ruby><rb>當</rb><rp>(</rp><rt class="VietRt">đang</rt><rp>)</rp></ruby><ruby><rb>學</rb><rp>(</rp><rt class="VietRt">học</rt><rp>)</rp></ruby><ruby><rb>㗂</rb><rp>(</rp><rt class="VietRt">Tiếng</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp></ruby>。<ruby><rb>倅</rb><rp>(</rp><rt class="VietRt">Tôi</rt><rp>)</rp></ruby><ruby><rb>適</rb><rp>(</rp><rt class="VietRt">thích</rt><rp>)</rp></ruby><ruby><rb>𡨸</rb><rp>(</rp><rt class="VietRt">Chữ</rt><rp>)</rp><rb>漢󠄁</rb><rp>(</rp><rt class="VietRt">Hán</rt><rp>)</rp><rb>喃</rb><rp>(</rp><rt class="VietRt">Nôm</rt><rp>)</rp></ruby><ruby><rb>𡝕</rb><rp>(</rp><rt class="VietRt">và</rt><rp>)</rp></ruby><ruby><rb>𡨸</rb><rp>(</rp><rt class="VietRt">Chữ</rt><rp>)</rp><rb>國</rb><rp>(</rp><rt class="VietRt">Quốc</rt><rp>)</rp><rb>語</rb><rp>(</rp><rt class="VietRt">Ngữ</rt><rp>)</rp></ruby><ruby><rb>𧵑</rb><rp>(</rp><rt class="VietRt">của</rt><rp>)</rp></ruby><ruby><rb>㗂</rb><rp>(</rp><rt class="VietRt">Tiếng</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp></ruby>。<ruby><rb>倅</rb><rp>(</rp><rt class="VietRt">Tôi</rt><rp>)</rp></ruby><ruby><rb>㦖</rb><rp>(</rp><rt class="VietRt">muốn</rt><rp>)</rp></ruby><ruby><rb>𤯩</rb><rp>(</rp><rt class="VietRt">sống</rt><rp>)</rp></ruby><ruby><rb>𡝕</rb><rp>(</rp><rt class="VietRt">và</rt><rp>)</rp></ruby><ruby><rb>學</rb><rp>(</rp><rt class="VietRt">học</rt><rp>)</rp></ruby><ruby><rb>大</rb><rp>(</rp><rt class="VietRt">đại</rt><rp>)</rp><rb>學</rb><rp>(</rp><rt class="VietRt">học</rt><rp>)</rp></ruby><ruby><rb>𣄒</rb><rp>(</rp><rt class="VietRt">ở</rt><rp>)</rp></ruby><ruby><rb>日</rb><rp>(</rp><rt class="VietRt">Nhật</rt><rp>)</rp><rb>本</rb><rp>(</rp><rt class="VietRt">Bản</rt><rp>)</rp></ruby><ruby><rb>𡝕</rb><rp>(</rp><rt class="VietRt">và</rt><rp>)</rp></ruby><ruby><rb>倅</rb><rp>(</rp><rt class="VietRt">tôi</rt><rp>)</rp></ruby><ruby><rb>當</rb><rp>(</rp><rt class="VietRt">đang</rt><rp>)</rp></ruby><ruby><rb>學</rb><rp>(</rp><rt class="VietRt">học</rt><rp>)</rp></ruby><ruby><rb>㗂</rb><rp>(</rp><rt class="VietRt">Tiếng</rt><rp>)</rp><rb>日</rb><rp>(</rp><rt class="VietRt">Nhật</rt><rp>)</rp></ruby><ruby><rb>𡝕</rb><rp>(</rp><rt class="VietRt">và</rt><rp>)</rp></ruby><ruby><rb>漢󠄁</rb><rp>(</rp><rt class="VietRt">Hán</rt><rp>)</rp><rb>字</rb><rp>(</rp><rt class="VietRt">Tự</rt><rp>)</rp></ruby>。<ruby><rb>家</rb><rp>(</rp><rt class="VietRt">Gia</rt><rp>)</rp><rb>庭</rb><rp>(</rp><rt class="VietRt">đình</rt><rp>)</rp></ruby><ruby><rb>倅</rb><rp>(</rp><rt class="VietRt">tôi</rt><rp>)</rp></ruby><ruby><rb>𦤾</rb><rp>(</rp><rt class="VietRt">đến</rt><rp>)</rp></ruby><ruby><rb>自</rb><rp>(</rp><rt class="VietRt">từ</rt><rp>)</rp></ruby>El Salvador。<ruby><rb>倅</rb><rp>(</rp><rt class="VietRt">Tôi</rt><rp>)</rp></ruby><ruby><rb>𪜀</rb><rp>(</rp><rt class="VietRt">là</rt><rp>)</rp></ruby><ruby><rb>𠊛</rb><rp>(</rp><rt class="VietRt">người</rt><rp>)</rp></ruby><ruby><rb>小</rb><rp>(</rp><rt class="VietRt">tiểu<rp>)</rp></ruby><ruby><rb>邦</rb><rp>(</rp><rt class="VietRt">bang<rp>)</rp></ruby>California。<ruby><rb>義</rb><rp>(</rp><rt class="VietRt">Nghĩa</rt><rp>)</rp></ruby><ruby><rb>𧵑</rb><rp>(</rp><rt class="VietRt">của</rt><rp>)</rp></ruby>「<ruby><rb>白</rb><rp>(</rp><rt class="VietRt">bạch</rt><rp>)</rp><rb>馬</rb><rp>(</rp><rt class="VietRt">mã</rt><rp>)</rp></ruby>」<ruby><rb>𪜀</rb><rp>(</rp><rt class="VietRt">là</rt><rp>)</rp></ruby>「<ruby><rb>馭</rb><rp>(</rp><rt class="VietRt">ngựa</rt><rp>)</rp><rb>𤽸</rb><rp>(</rp><rt class="VietRt">trắng</rt><rp>)</rp></ruby>」。<ruby><rb>倅</rb><rp>(</rp><rt class="VietRt">Tôi</rt><rp>)</rp></ruby><ruby><rb>空</rb><rp>(</rp><rt class="VietRt">không</rt><rp>)</rp></ruby><ruby><rb>沛</rb><rp>(</rp><rt class="VietRt">phải</rt><rp>)</rp></ruby><ruby><rb>𪜀</rb><rp>(</rp><rt class="VietRt">là</rt><rp>)</rp></ruby><ruby><rb>𠊛</rb><rp>(</rp><rt class="VietRt">người</rt><rp>)</rp></ruby><ruby><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp></ruby>、<ruby><rb>倅</rb><rp>(</rp><rt class="VietRt">tôi</rt><rp>)</rp></ruby><ruby><rb>𪜀</rb><rp>(</rp><rt class="VietRt">là</rt><rp>)</rp></ruby><ruby><rb>𠊛</rb><rp>(</rp><rt class="VietRt">người</rt><rp>)</rp></ruby><ruby><rb>美</rb><rp>(</rp><rt class="VietRt">Mỹ</rt><rp>)</rp></ruby>。<ruby><rb>倅</rb><rp>(</rp><rt class="VietRt">Tôi</rt><rp>)</rp></ruby><ruby><rb>𪜀</rb><rp>(</rp><rt class="VietRt">là</rt><rp>)</rp></ruby><ruby><rb>生</rb><rp>(</rp><rt class="VietRt">sinh</rt><rp>)</rp><rb>員</rb><rp>(</rp><rt class="VietRt">viên</rt><rp>)</rp></ruby>。<ruby><rb>倅</rb><rp>(</rp><rt class="VietRt">Tôi</rt><rp>)</rp></ruby><ruby><rb>𠄩</rb><rp>(</rp><rt class="VietRt">hai</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp></ruby><ruby><rb>歲</rb><rp>(</rp><rt class="VietRt">tuổi</rt><rp>)</rp></ruby>。
+<ruby><rb>吀</rb><rp>(</rp><rt class="VietRt">Xin</rt><rp>)</rp><rb>嘲󠄀</rb><rp>(</rp><rt class="VietRt">chào</rt><rp>)</rp></ruby>！<ruby><rb>倅</rb><rp>(</rp><rt
+        class="VietRt">Tôi</rt><rp>)</rp></ruby><ruby><rb>𪜀</rb><rp>(</rp><rt class="VietRt">là</rt><rp>)</rp></ruby>Miguel。<ruby><rb>倅</rb><rp>(</rp><rt
+        class="VietRt">Tôi</rt><rp>)</rp></ruby><ruby><rb>當</rb><rp>(</rp><rt class="VietRt">đang</rt><rp>)</rp></ruby><ruby><rb>學</rb><rp>(</rp><rt
+        class="VietRt">học</rt><rp>)</rp></ruby><ruby><rb>㗂</rb><rp>(</rp><rt class="VietRt">Tiếng</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt
+        class="VietRt">Việt</rt><rp>)</rp></ruby>。<ruby><rb>倅</rb><rp>(</rp><rt class="VietRt">Tôi</rt><rp>)</rp></ruby><ruby><rb>適</rb><rp>(</rp><rt
+        class="VietRt">thích</rt><rp>)</rp></ruby><ruby><rb>𡨸</rb><rp>(</rp><rt class="VietRt">Chữ</rt><rp>)</rp><rb>漢󠄁</rb><rp>(</rp><rt
+        class="VietRt">Hán</rt><rp>)</rp><rb>喃</rb><rp>(</rp><rt class="VietRt">Nôm</rt><rp>)</rp></ruby><ruby><rb>𡝕</rb><rp>(</rp><rt
+        class="VietRt">và</rt><rp>)</rp></ruby><ruby><rb>𡨸</rb><rp>(</rp><rt class="VietRt">Chữ</rt><rp>)</rp><rb>國</rb><rp>(</rp><rt
+        class="VietRt">Quốc</rt><rp>)</rp><rb>語</rb><rp>(</rp><rt class="VietRt">Ngữ</rt><rp>)</rp></ruby><ruby><rb>𧵑</rb><rp>(</rp><rt
+        class="VietRt">của</rt><rp>)</rp></ruby><ruby><rb>㗂</rb><rp>(</rp><rt class="VietRt">Tiếng</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt
+        class="VietRt">Việt</rt><rp>)</rp></ruby>。<ruby><rb>倅</rb><rp>(</rp><rt class="VietRt">Tôi</rt><rp>)</rp></ruby><ruby><rb>㦖</rb><rp>(</rp><rt
+        class="VietRt">muốn</rt><rp>)</rp></ruby><ruby><rb>𤯩</rb><rp>(</rp><rt class="VietRt">sống</rt><rp>)</rp></ruby><ruby><rb>𡝕</rb><rp>(</rp><rt
+        class="VietRt">và</rt><rp>)</rp></ruby><ruby><rb>學</rb><rp>(</rp><rt class="VietRt">học</rt><rp>)</rp></ruby><ruby><rb>大</rb><rp>(</rp><rt
+        class="VietRt">đại</rt><rp>)</rp><rb>學</rb><rp>(</rp><rt class="VietRt">học</rt><rp>)</rp></ruby><ruby><rb>𣄒</rb><rp>(</rp><rt
+        class="VietRt">ở</rt><rp>)</rp></ruby><ruby><rb>日</rb><rp>(</rp><rt class="VietRt">Nhật</rt><rp>)</rp><rb>本</rb><rp>(</rp><rt
+        class="VietRt">Bản</rt><rp>)</rp></ruby><ruby><rb>𡝕</rb><rp>(</rp><rt class="VietRt">và</rt><rp>)</rp></ruby><ruby><rb>倅</rb><rp>(</rp><rt
+        class="VietRt">tôi</rt><rp>)</rp></ruby><ruby><rb>當</rb><rp>(</rp><rt class="VietRt">đang</rt><rp>)</rp></ruby><ruby><rb>學</rb><rp>(</rp><rt
+        class="VietRt">học</rt><rp>)</rp></ruby><ruby><rb>㗂</rb><rp>(</rp><rt class="VietRt">Tiếng</rt><rp>)</rp><rb>日</rb><rp>(</rp><rt
+        class="VietRt">Nhật</rt><rp>)</rp></ruby><ruby><rb>𡝕</rb><rp>(</rp><rt class="VietRt">và</rt><rp>)</rp></ruby><ruby><rb>漢󠄁</rb><rp>(</rp><rt
+        class="VietRt">Hán</rt><rp>)</rp><rb>字</rb><rp>(</rp><rt class="VietRt">Tự</rt><rp>)</rp></ruby>。<ruby><rb>家</rb><rp>(</rp><rt
+        class="VietRt">Gia</rt><rp>)</rp><rb>庭</rb><rp>(</rp><rt class="VietRt">đình</rt><rp>)</rp></ruby><ruby><rb>倅</rb><rp>(</rp><rt
+        class="VietRt">tôi</rt><rp>)</rp></ruby><ruby><rb>𦤾</rb><rp>(</rp><rt class="VietRt">đến</rt><rp>)</rp></ruby><ruby><rb>自</rb><rp>(</rp><rt
+        class="VietRt">từ</rt><rp>)</rp></ruby>El Salvador。<ruby><rb>倅</rb><rp>(</rp><rt class="VietRt">Tôi</rt><rp>)</rp></ruby><ruby><rb>𪜀</rb><rp>(</rp><rt
+        class="VietRt">là</rt><rp>)</rp></ruby><ruby><rb>𠊛</rb><rp>(</rp><rt class="VietRt">người</rt><rp>)</rp></ruby><ruby><rb>小</rb><rp>(</rp><rt
+        class="VietRt">tiểu<rp>)</rp></ruby><ruby><rb>邦</rb><rp>(</rp><rt class="VietRt">bang<rp>)</rp></ruby>California。<ruby><rb>義</rb><rp>(</rp><rt
+        class="VietRt">Nghĩa</rt><rp>)</rp></ruby><ruby><rb>𧵑</rb><rp>(</rp><rt class="VietRt">của</rt><rp>)</rp></ruby>「<ruby><rb>白</rb><rp>(</rp><rt
+        class="VietRt">bạch</rt><rp>)</rp><rb>馬</rb><rp>(</rp><rt class="VietRt">mã</rt><rp>)</rp></ruby>」<ruby><rb>𪜀</rb><rp>(</rp><rt
+        class="VietRt">là</rt><rp>)</rp></ruby>「<ruby><rb>馭</rb><rp>(</rp><rt class="VietRt">ngựa</rt><rp>)</rp><rb>𤽸</rb><rp>(</rp><rt
+        class="VietRt">trắng</rt><rp>)</rp></ruby>」。<ruby><rb>倅</rb><rp>(</rp><rt class="VietRt">Tôi</rt><rp>)</rp></ruby><ruby><rb>空</rb><rp>(</rp><rt
+        class="VietRt">không</rt><rp>)</rp></ruby><ruby><rb>沛</rb><rp>(</rp><rt class="VietRt">phải</rt><rp>)</rp></ruby><ruby><rb>𪜀</rb><rp>(</rp><rt
+        class="VietRt">là</rt><rp>)</rp></ruby><ruby><rb>𠊛</rb><rp>(</rp><rt class="VietRt">người</rt><rp>)</rp></ruby><ruby><rb>越</rb><rp>(</rp><rt
+        class="VietRt">Việt</rt><rp>)</rp></ruby>、<ruby><rb>倅</rb><rp>(</rp><rt class="VietRt">tôi</rt><rp>)</rp></ruby><ruby><rb>𪜀</rb><rp>(</rp><rt
+        class="VietRt">là</rt><rp>)</rp></ruby><ruby><rb>𠊛</rb><rp>(</rp><rt class="VietRt">người</rt><rp>)</rp></ruby><ruby><rb>美</rb><rp>(</rp><rt
+        class="VietRt">Mỹ</rt><rp>)</rp></ruby>。<ruby><rb>倅</rb><rp>(</rp><rt class="VietRt">Tôi</rt><rp>)</rp></ruby><ruby><rb>𪜀</rb><rp>(</rp><rt
+        class="VietRt">là</rt><rp>)</rp></ruby><ruby><rb>生</rb><rp>(</rp><rt class="VietRt">sinh</rt><rp>)</rp><rb>員</rb><rp>(</rp><rt
+        class="VietRt">viên</rt><rp>)</rp></ruby>。<ruby><rb>倅</rb><rp>(</rp><rt class="VietRt">Tôi</rt><rp>)</rp></ruby><ruby><rb>𠄩</rb><rp>(</rp><rt
+        class="VietRt">hai</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp></ruby><ruby><rb>歲</rb><rp>(</rp><rt
+        class="VietRt">tuổi</rt><rp>)</rp></ruby>。
 </p>
 <p>
-<ruby><rb>𤞦</rb><rp>(</rp><rt class="VietRt">Mọi</rt><rp>)</rp><rb>𠊛</rb><rp>(</rp><rt class="VietRt">người</rt><rp>)</rp></ruby><ruby><rb>𫗒</rb><rp>(</rp><rt class="VietRt">ăn</rt><rp>)</rp></ruby><ruby><rb>𬖾</rb><rp>(</rp><rt class="VietRt">phở</rt><rp>)</rp></ruby>。
+<ruby><rb>𤞦</rb><rp>(</rp><rt class="VietRt">Mọi</rt><rp>)</rp><rb>𠊛</rb><rp>(</rp><rt class="VietRt">người</rt><rp>)</rp></ruby><ruby><rb>𫗒</rb><rp>(</rp><rt
+        class="VietRt">ăn</rt><rp>)</rp></ruby><ruby><rb>𬖾</rb><rp>(</rp><rt class="VietRt">phở</rt><rp>)</rp></ruby>。
 </p>
 <p>
-<ruby><rb>感</rb><rp>(</rp><rt class="VietRt">Cảm</rt><rp>)</rp></ruby><ruby><rb>恩</rb><rp>(</rp><rt class="VietRt">ơn</rt><rp>)</rp></ruby>！
+<ruby><rb>感</rb><rp>(</rp><rt class="VietRt">Cảm</rt><rp>)</rp></ruby><ruby><rb>恩</rb><rp>(</rp><rt
+        class="VietRt">ơn</rt><rp>)</rp></ruby>！
 </p>
-<p style="font-size: 20pt"><ruby><rb>𬜝</rb><rp>(</rp><rt class="VietRt">Màu</rt><rp>)</rp><rb>色</rb><rp>(</rp><rt class="VietRt">sắc</rt><rp>)</rp></ruby><ruby><rb>𥪝</rb><rp>(</rp><rt class="VietRt">trong</rt><rp>)</rp></ruby><ruby><rb>㗂</rb><rp>(</rp><rt class="VietRt">Tiếng</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp></ruby>：</p>
+<p style="font-size: 20pt"><ruby><rb>𬜝</rb><rp>(</rp><rt class="VietRt">Màu</rt><rp>)</rp><rb>色</rb><rp>(</rp><rt
+        class="VietRt">sắc</rt><rp>)</rp></ruby><ruby><rb>𥪝</rb><rp>(</rp><rt class="VietRt">trong</rt><rp>)</rp></ruby><ruby><rb>㗂</rb><rp>(</rp><rt
+        class="VietRt">Tiếng</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp></ruby>：</p>
 <p style="font-size: 15pt">
 <ul>
-<li><ruby><rb>𬜝黰</rb><rp>(</rp><rt class="VietRt">Màu đen</rt><rp>)</rp></ruby>：<ruby><rb>黑</rb><rp>(</rp><rt class="VietRt">Hắc</rt><rp>)</rp></ruby></li>
-<li><ruby><rb>𬜝𤽸</rb><rp>(</rp><rt class="VietRt">Màu trắng</rt><rp>)</rp></ruby>：<ruby><rb>白</rb><rp>(</rp><rt class="VietRt">Bạch</rt><rp>)</rp></ruby></li>
-<li><ruby><rb>𧹼</rb><rp>(</rp><rt class="VietRt">Đỏ</rt><rp>)</rp></ruby>（<ruby><rb>變</rb><rp>(</rp><rt class="VietRt">biến</rt><rp>)</rp><rb>體</rb><rp>(</rp><rt class="VietRt">thể</rt><rp>)</rp></ruby>：<ruby><rb>𧺃</rb><rp>(</rp><rt class="VietRt">đỏ</rt><rp>)</rp></ruby>、<ruby><rb>𣠶</rb><rp>(</rp><rt class="VietRt">đỏ</rt><rp>)</rp></ruby>、<ruby><rb>𧹦</rb><rp>(</rp><rt class="VietRt">đỏ</rt><rp>)</rp></ruby>、<ruby><rb>𪜕</rb><rp>(</rp><rt class="VietRt">đỏ</rt><rp>)</rp></ruby>、<ruby><rb>赭</rb><rp>(</rp><rt class="VietRt">đỏ</rt><rp>)</rp></ruby>）：<ruby><rb>赤</rb><rp>(</rp><rt class="VietRt">Xích</rt><rp>)</rp></ruby>、<ruby><rb>紅</rb><rp>(</rp><rt class="VietRt">Hồng</rt><rp>)</rp></ruby>、<ruby><rb>朱</rb><rp>(</rp><rt class="VietRt">Cho</rt><rp>)</rp></ruby>、<ruby><rb>緋</rb><rp>(</rp><rt class="VietRt">phi</rt><rp>)</rp></ruby></li>
+<li><ruby><rb>𬜝黰</rb><rp>(</rp><rt class="VietRt">Màu đen</rt><rp>)</rp></ruby>：<ruby><rb>黑</rb><rp>(</rp><rt
+        class="VietRt">Hắc</rt><rp>)</rp></ruby></li>
+<li><ruby><rb>𬜝𤽸</rb><rp>(</rp><rt class="VietRt">Màu trắng</rt><rp>)</rp></ruby>：<ruby><rb>白</rb><rp>(</rp><rt
+        class="VietRt">Bạch</rt><rp>)</rp></ruby></li>
+<li><ruby><rb>𧹼</rb><rp>(</rp><rt class="VietRt">Đỏ</rt><rp>)</rp></ruby>（<ruby><rb>變</rb><rp>(</rp><rt class="VietRt">biến</rt><rp>)</rp><rb>體</rb><rp>(</rp><rt
+        class="VietRt">thể</rt><rp>)</rp></ruby>：<ruby><rb>𧺃</rb><rp>(</rp><rt class="VietRt">đỏ</rt><rp>)</rp></ruby>、<ruby><rb>𣠶</rb><rp>(</rp><rt
+        class="VietRt">đỏ</rt><rp>)</rp></ruby>、<ruby><rb>𧹦</rb><rp>(</rp><rt class="VietRt">đỏ</rt><rp>)</rp></ruby>、<ruby><rb>𪜕</rb><rp>(</rp><rt
+        class="VietRt">đỏ</rt><rp>)</rp></ruby>、<ruby><rb>赭</rb><rp>(</rp><rt class="VietRt">đỏ</rt><rp>)</rp></ruby>）：<ruby><rb>赤</rb><rp>(</rp><rt
+        class="VietRt">Xích</rt><rp>)</rp></ruby>、<ruby><rb>紅</rb><rp>(</rp><rt class="VietRt">Hồng</rt><rp>)</rp></ruby>、<ruby><rb>朱</rb><rp>(</rp><rt
+        class="VietRt">Cho</rt><rp>)</rp></ruby>、<ruby><rb>緋</rb><rp>(</rp><rt class="VietRt">phi</rt><rp>)</rp></ruby></li>
 <li><ruby><rb>𬜝柑</rb><rp>(</rp><rt class="VietRt">Màu cam</rt><rp>)</rp></ruby>：</li>
 <li><ruby><rb></rb><rp>(</rp><rt class="VietRt">Vàng</rt><rp>)</rp></ruby>：</li>
 <li><ruby><rb>綠</rb><rp>(</rp><rt class="VietRt">Lục</rt><rp>)</rp></ruby>：</li>
 <li><ruby><rb>藍</rb><rp>(</rp><rt class="VietRt">Lam</rt><rp>)</rp></ruby>：</li>
-<li><ruby><rb>撑</rb><rp>(</rp><rt class="VietRt">Xanh</rt><rp>)</rp></ruby>（<ruby><rb>變</rb><rp>(</rp><rt class="VietRt">biến</rt><rp>)</rp><rb>體</rb><rp>(</rp><rt class="VietRt">thể</rt><rp>)</rp></ruby>：<ruby><rb>𩇢</rb><rp>(</rp><rt class="VietRt">xanh</rt><rp>)</rp></ruby>）：<ruby><rb>青</rb><rp>(</rp><rt class="VietRt">thanh</rt><rp>)</rp></ruby>、、</li>
-<li><ruby><rb>𧹿</rb><rp>(</rp><rt class="VietRt">Tím</rt><rp>)</rp></ruby>（<ruby><rb>變</rb><rp>(</rp><rt class="VietRt">biến</rt><rp>)</rp><rb>體</rb><rp>(</rp><rt class="VietRt">thể</rt><rp>)</rp></ruby>：<ruby><rb>僣</rb><rp>(</rp><rt class="VietRt">tím</rt><rp>)</rp></ruby>、<ruby><rb>僭</rb><rp>(</rp><rt class="VietRt">tím</rt><rp>)</rp></ruby>、<ruby><rb>紺</rb><rp>(</rp><rt class="VietRt">tím</rt><rp>)</rp></ruby>）：<ruby><rb>A</rb><rp>(</rp><rt class="VietRt">B</rt><rp>)</rp></ruby></li>
+<li><ruby><rb>撑</rb><rp>(</rp><rt class="VietRt">Xanh</rt><rp>)</rp></ruby>（<ruby><rb>變</rb><rp>(</rp><rt
+        class="VietRt">biến</rt><rp>)</rp><rb>體</rb><rp>(</rp><rt class="VietRt">thể</rt><rp>)</rp></ruby>：<ruby><rb>𩇢</rb><rp>(</rp><rt
+        class="VietRt">xanh</rt><rp>)</rp></ruby>）：<ruby><rb>青</rb><rp>(</rp><rt class="VietRt">thanh</rt><rp>)</rp></ruby>、、</li>
+<li><ruby><rb>𧹿</rb><rp>(</rp><rt class="VietRt">Tím</rt><rp>)</rp></ruby>（<ruby><rb>變</rb><rp>(</rp><rt
+        class="VietRt">biến</rt><rp>)</rp><rb>體</rb><rp>(</rp><rt class="VietRt">thể</rt><rp>)</rp></ruby>：<ruby><rb>僣</rb><rp>(</rp><rt
+        class="VietRt">tím</rt><rp>)</rp></ruby>、<ruby><rb>僭</rb><rp>(</rp><rt class="VietRt">tím</rt><rp>)</rp></ruby>、<ruby><rb>紺</rb><rp>(</rp><rt
+        class="VietRt">tím</rt><rp>)</rp></ruby>）：<ruby><rb>A</rb><rp>(</rp><rt class="VietRt">B</rt><rp>)</rp></ruby></li>
 </ul>
-</p>
+    </p>
 
-<table id="Số_từ_trong_Tiếng_Việt" border="1" style="font-size: 15pt; text-align: center">
+    <table id="Số_từ_trong_Tiếng_Việt" border="1" style="font-size: 15pt; text-align: center">
   	<tr>
-		<td rowspan="4"><ruby><rb>價</rb><rp>(</rp><rt class="VietRt">giá</rt><rp>)</rp><rb>值</rb><rp>(</rp><rt class="VietRt">trị</rt><rp>)</rp></ruby></td>
-		<td colspan="4"><ruby><rb>數</rb><rp>(</rp><rt class="VietRt">Số</rt><rp>)</rp><rb>詞</rb><rp>(</rp><rt class="VietRt">từ</rt><rp>)</rp></ruby><ruby><rb>𥪝</rb><rp>(</rp><rt class="VietRt">trong</rt><rp>)</rp></ruby><ruby><rb>㗂</rb><rp>(</rp><rt class="VietRt">Tiếng</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp></ruby></td>
+		<td rowspan="4"><ruby><rb>價</rb><rp>(</rp><rt class="VietRt">giá</rt><rp>)</rp><rb>值</rb><rp>(</rp><rt
+                class="VietRt">trị</rt><rp>)</rp></ruby></td>
+		<td colspan="4"><ruby><rb>數</rb><rp>(</rp><rt class="VietRt">Số</rt><rp>)</rp><rb>詞</rb><rp>(</rp><rt
+                class="VietRt">từ</rt><rp>)</rp></ruby><ruby><rb>𥪝</rb><rp>(</rp><rt class="VietRt">trong</rt><rp>)</rp></ruby><ruby><rb>㗂</rb><rp>(</rp><rt
+                class="VietRt">Tiếng</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp></ruby></td>
 		<td rowspan="4">Notes</td>
 	</tr>
 	<tr>
-		<td rowspan="3"><ruby><rb>詞</rb><rp>(</rp><rt class="VietRt">Từ</rt><rp>)</rp><rb>純</rb><rp>(</rp><rt class="VietRt">thuần</rt><rp>)</rp><rb>粹</rb><rp>(</rp><rt class="VietRt">túy</rt><rp>)</rp></ruby></td>
-		<td colspan="3"><ruby><rb>詞</rb><rp>(</rp><rt class="VietRt">Từ</rt><rp>)</rp><rb>漢󠄁</rb><rp>(</rp><rt class="VietRt">Hán</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp></ruby></td>
+		<td rowspan="3"><ruby><rb>詞</rb><rp>(</rp><rt class="VietRt">Từ</rt><rp>)</rp><rb>純</rb><rp>(</rp><rt
+                class="VietRt">thuần</rt><rp>)</rp><rb>粹</rb><rp>(</rp><rt class="VietRt">túy</rt><rp>)</rp></ruby></td>
+		<td colspan="3"><ruby><rb>詞</rb><rp>(</rp><rt class="VietRt">Từ</rt><rp>)</rp><rb>漢󠄁</rb><rp>(</rp><rt
+                class="VietRt">Hán</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp></ruby></td>
 	</tr>
 	<tr>
-		<td rowspan="2"><ruby><rb>漢󠄁</rb><rp>(</rp><rt class="VietRt">Hán</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp><rb>古</rb><rp>(</rp><rt class="VietRt">cổ</rt><rp>)</rp></ruby></td>
-		<td colspan="2"><ruby><rb>普</rb><rp>(</rp><rt class="VietRt">phổ</rt><rp>)</rp><rb>通</rb><rp>(</rp><rt class="VietRt">thông</rt><rp>)</rp></ruby></td>
+		<td rowspan="2"><ruby><rb>漢󠄁</rb><rp>(</rp><rt class="VietRt">Hán</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt
+                class="VietRt">Việt</rt><rp>)</rp><rb>古</rb><rp>(</rp><rt class="VietRt">cổ</rt><rp>)</rp></ruby></td>
+		<td colspan="2"><ruby><rb>普</rb><rp>(</rp><rt class="VietRt">phổ</rt><rp>)</rp><rb>通</rb><rp>(</rp><rt
+                class="VietRt">thông</rt><rp>)</rp></ruby></td>
 	</tr>
 	<tr>
 		<td><ruby><rb>常</rb><rp>(</rp><rt class="VietRt">thường</rt><rp>)</rp><rb>用</rb><rp>(</rp><rt class="VietRt">dùng</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>𧶭</rb><rp>(</rp><rt class="VietRt">buôn</rt><rp>)</rp><rb>𧸝</rb><rp>(</rp><rt class="VietRt">bán</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𧶭</rb><rp>(</rp><rt class="VietRt">buôn</rt><rp>)</rp><rb>𧸝</rb><rp>(</rp><rt
+                class="VietRt">bán</rt><rp>)</rp></ruby></td>
 	</tr>
 	<tr>
-		<td><ruby><rb>數</rb><rp>(</rp><rt class="VietRt">số</rt><rp>)</rp><rb>陰</rb><rp>(</rp><rt class="VietRt">âm</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>數</rb><rp>(</rp><rt class="VietRt">số</rt><rp>)</rp><rb>陰</rb><rp>(</rp><rt
+                class="VietRt">âm</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>陰</rb><rp>(</rp><rt class="VietRt">âm</rt><rp>)</rp></ruby>〜、<br/><ruby><rb>除</rb><rp>(</rp><rt class="VietRt">trừ</rt><rp>)</rp></ruby>〜</td>
+		<td><ruby><rb>陰</rb><rp>(</rp><rt class="VietRt">âm</rt><rp>)</rp></ruby>〜、<br/><ruby><rb>除</rb><rp>(</rp><rt
+                class="VietRt">trừ</rt><rp>)</rp></ruby>〜</td>
 		<td style="background-color: lightgrey;"></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
@@ -340,8 +515,11 @@ li:before {
 		<td>0</td>
 		<td style="background-color: lightgrey;"></td>
 		<td style="background-color: lightgrey;"></td>
-		<td colspan="2"><ruby><rb>空</rb><rp>(</rp><rt class="VietRt">không</rt><rp>)</rp></ruby>、<br/><ruby><rb>零</rb><rp>(</rp><rt class="VietRt">linh</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>零</rb><rp>(</rp><rt class="VietRt">linh</rt><rp>)</rp></ruby> may also become <ruby><rb>？</rb><rp>(</rp><rt class="VietRt">lẻ</rt><rp>)</rp></ruby> when in compounds (<ruby><rb>𫦇</rb><rp>(</rp><rt class="VietRt">Miền</rt><rp>)</rp><rb>南</rb><rp>(</rp><rt class="VietRt">Nam</rt><rp>)</rp></ruby>)</td>
+		<td colspan="2"><ruby><rb>空</rb><rp>(</rp><rt class="VietRt">không</rt><rp>)</rp></ruby>、<br/><ruby><rb>零</rb><rp>(</rp><rt
+                class="VietRt">linh</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>零</rb><rp>(</rp><rt class="VietRt">linh</rt><rp>)</rp></ruby> may also become <ruby><rb>？</rb><rp>(</rp><rt
+                class="VietRt">lẻ</rt><rp>)</rp></ruby> when in compounds (<ruby><rb>𫦇</rb><rp>(</rp><rt class="VietRt">Miền</rt><rp>)</rp><rb>南</rb><rp>(</rp><rt
+                class="VietRt">Nam</rt><rp>)</rp></ruby>)</td>
 	</tr>
 	<tr>
 		<td>1</td>
@@ -349,7 +527,8 @@ li:before {
 		<td style="background-color: lightgrey;"></td>
 		<td><ruby><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
 		<td><ruby><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp></ruby> becomes <ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">mốt</rt><rp>)</rp></ruby> in 21-91</td>
+		<td><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp></ruby> becomes <ruby><rb>𠬠</rb><rp>(</rp><rt
+                class="VietRt">mốt</rt><rp>)</rp></ruby> in 21-91</td>
 	</tr>
 	<tr>
 		<td>2</td>
@@ -373,7 +552,8 @@ li:before {
 		<td><ruby><rb>𦊛</rb><rp>(</rp><rt class="VietRt">tư</rt><rp>)</rp></ruby></td>
 		<td><ruby><rb>四</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp></ruby></td>
 		<td><ruby><rb>肆</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>𦊛</rb><rp>(</rp><rt class="VietRt">tư</rt><rp>)</rp></ruby> is used instead of <ruby><rb>𦊚</rb><rp>(</rp><rt class="VietRt">bốn</rt><rp>)</rp></ruby> in 24-94</td>
+		<td><ruby><rb>𦊛</rb><rp>(</rp><rt class="VietRt">tư</rt><rp>)</rp></ruby> is used instead of <ruby><rb>𦊚</rb><rp>(</rp><rt
+                class="VietRt">bốn</rt><rp>)</rp></ruby> in 24-94</td>
 	</tr>
 	<tr>
 		<td>5</td>
@@ -381,7 +561,10 @@ li:before {
 		<td style="background-color: lightgrey;"></td>
 		<td><ruby><rb>五</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp></ruby></td>
 		<td><ruby><rb>伍</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>𠄼</rb><rp>(</rp><rt class="VietRt">năm</rt><rp>)</rp></ruby> becomes <ruby><rb>𠄻</rb><rp>(</rp><rt class="VietRt">lăm</rt><rp>)</rp></ruby> or <ruby><rb>𠄶</rb><rp>(</rp><rt class="VietRt">nhăm</rt><rp>)</rp></ruby> (<ruby><rb>𫦇</rb><rp>(</rp><rt class="VietRt">Miền</rt><rp>)</rp><rb>北</rb><rp>(</rp><rt class="VietRt">Bắc</rt><rp>)</rp></ruby>) in 15-95 in order to prevent confusion with homophonous <ruby><rb>𢆥</rb><rp>(</rp><rt class="VietRt">năm</rt><rp>)</rp></ruby> (which means: "year")</td>
+		<td><ruby><rb>𠄼</rb><rp>(</rp><rt class="VietRt">năm</rt><rp>)</rp></ruby> becomes <ruby><rb>𠄻</rb><rp>(</rp><rt
+                class="VietRt">lăm</rt><rp>)</rp></ruby> or <ruby><rb>𠄶</rb><rp>(</rp><rt class="VietRt">nhăm</rt><rp>)</rp></ruby> (<ruby><rb>𫦇</rb><rp>(</rp><rt
+                class="VietRt">Miền</rt><rp>)</rp><rb>北</rb><rp>(</rp><rt class="VietRt">Bắc</rt><rp>)</rp></ruby>) in 15-95 in order to prevent confusion with homophonous <ruby><rb>𢆥</rb><rp>(</rp><rt
+                class="VietRt">năm</rt><rp>)</rp></ruby> (which means: "year")</td>
 	</tr>
 	<tr>
 		<td>6</td>
@@ -417,15 +600,18 @@ li:before {
 	</tr>
 	<tr>
 		<td>10</td>
-		<td><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp><rb>𨔿</rb><rp>(</rp><rt class="VietRt">chục</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt
+                class="VietRt">một</rt><rp>)</rp><rb>𨔿</rb><rp>(</rp><rt class="VietRt">chục</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 		<td><ruby><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp></ruby></td>
 		<td><ruby><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp></ruby> becomes <ruby><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp></ruby> in 20-99</td>
+		<td><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp></ruby> becomes <ruby><rb>𠦩</rb><rp>(</rp><rt
+                class="VietRt">mươi</rt><rp>)</rp></ruby> in 20-99</td>
 	</tr>
 	<tr>
 		<td>11</td>
-		<td><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp><rb>𠬠</rb><rp>(</rp><rt
+                class="VietRt">một</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 		<td><ruby><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
 		<td><ruby><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
@@ -433,138 +619,193 @@ li:before {
 	</tr>
 	<tr>
 		<td>12</td>
-		<td><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp><rb>𠄩</rb><rp>(</rp><rt class="VietRt">hai</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp></ruby>tá</td>
+		<td><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp><rb>𠄩</rb><rp>(</rp><rt
+                class="VietRt">hai</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp></ruby>tá</td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>二</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>貳</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>二</rb><rp>(</rp><rt
+                class="VietRt">nhị</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>貳</rb><rp>(</rp><rt
+                class="VietRt">nhị</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>13</td>
-		<td><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp><rb>𠀧</rb><rp>(</rp><rt class="VietRt">ba</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp><rb>𠀧</rb><rp>(</rp><rt
+                class="VietRt">ba</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>三</rb><rp>(</rp><rt class="VietRt">tam</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>叄</rb><rp>(</rp><rt class="VietRt">tam</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>三</rb><rp>(</rp><rt
+                class="VietRt">tam</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>叄</rb><rp>(</rp><rt
+                class="VietRt">tam</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>14</td>
-		<td><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp><rb>𦊚</rb><rp>(</rp><rt class="VietRt">bốn</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp><rb>𦊚</rb><rp>(</rp><rt
+                class="VietRt">bốn</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>四</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>肆</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>四</rb><rp>(</rp><rt
+                class="VietRt">tứ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>肆</rb><rp>(</rp><rt
+                class="VietRt">tứ</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>15</td>
-		<td><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp><rb>𠄻</rb><rp>(</rp><rt class="VietRt">lăm</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp><rb>𠄻</rb><rp>(</rp><rt
+                class="VietRt">lăm</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>五</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>伍</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>五</rb><rp>(</rp><rt
+                class="VietRt">ngũ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>伍</rb><rp>(</rp><rt
+                class="VietRt">ngũ</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>20</td>
-		<td><ruby><rb>𠄩</rb><rp>(</rp><rt class="VietRt">hai</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠄩</rb><rp>(</rp><rt class="VietRt">hai</rt><rp>)</rp><rb>𨔿</rb><rp>(</rp><rt class="VietRt">chục</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𠄩</rb><rp>(</rp><rt class="VietRt">hai</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt
+                class="VietRt">mươi</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠄩</rb><rp>(</rp><rt class="VietRt">hai</rt><rp>)</rp><rb>𨔿</rb><rp>(</rp><rt
+                class="VietRt">chục</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>二</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>貳</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>二</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>貳</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>21</td>
-		<td><ruby><rb>𠄩</rb><rp>(</rp><rt class="VietRt">hai</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp><rb>𠬠</rb><rp>(</rp><rt class="VietRt">mốt</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𠄩</rb><rp>(</rp><rt class="VietRt">hai</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt
+                class="VietRt">mươi</rt><rp>)</rp><rb>𠬠</rb><rp>(</rp><rt class="VietRt">mốt</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>二</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>貳</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>二</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>貳</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>24</td>
-		<td><ruby><rb>𠄩</rb><rp>(</rp><rt class="VietRt">hai</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp><rb>𦊛</rb><rp>(</rp><rt class="VietRt">tư</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𠄩</rb><rp>(</rp><rt class="VietRt">hai</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt
+                class="VietRt">mươi</rt><rp>)</rp><rb>𦊛</rb><rp>(</rp><rt class="VietRt">tư</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>二</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>四</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>貳</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>肆</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>二</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>四</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>貳</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>肆</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>25</td>
-		<td><ruby><rb>𠄩</rb><rp>(</rp><rt class="VietRt">hai</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp><rb>𠄻</rb><rp>(</rp><rt class="VietRt">lăm</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𠄩</rb><rp>(</rp><rt class="VietRt">hai</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt
+                class="VietRt">mươi</rt><rp>)</rp><rb>𠄻</rb><rp>(</rp><rt class="VietRt">lăm</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>二</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>五</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>貳</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>伍</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>二</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>五</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>貳</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>伍</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>30</td>
-		<td><ruby><rb>𠀧</rb><rp>(</rp><rt class="VietRt">ba</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠀧</rb><rp>(</rp><rt class="VietRt">ba</rt><rp>)</rp><rb>𨔿</rb><rp>(</rp><rt class="VietRt">chục</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𠀧</rb><rp>(</rp><rt class="VietRt">ba</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt
+                class="VietRt">mươi</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠀧</rb><rp>(</rp><rt class="VietRt">ba</rt><rp>)</rp><rb>𨔿</rb><rp>(</rp><rt
+                class="VietRt">chục</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>三</rb><rp>(</rp><rt class="VietRt">tam</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>叄</rb><rp>(</rp><rt class="VietRt">tam</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>三</rb><rp>(</rp><rt class="VietRt">tam</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>叄</rb><rp>(</rp><rt class="VietRt">tam</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>31</td>
-		<td><ruby><rb>𠀧</rb><rp>(</rp><rt class="VietRt">ba</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp><rb>𠬠</rb><rp>(</rp><rt class="VietRt">mốt</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𠀧</rb><rp>(</rp><rt class="VietRt">ba</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt
+                class="VietRt">mươi</rt><rp>)</rp><rb>𠬠</rb><rp>(</rp><rt class="VietRt">mốt</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>三</rb><rp>(</rp><rt class="VietRt">tam</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>叄</rb><rp>(</rp><rt class="VietRt">tam</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>三</rb><rp>(</rp><rt class="VietRt">tam</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>叄</rb><rp>(</rp><rt class="VietRt">tam</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>33</td>
-		<td><ruby><rb>𠀧</rb><rp>(</rp><rt class="VietRt">ba</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp><rb>𠀧</rb><rp>(</rp><rt class="VietRt">ba</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𠀧</rb><rp>(</rp><rt class="VietRt">ba</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt
+                class="VietRt">mươi</rt><rp>)</rp><rb>𠀧</rb><rp>(</rp><rt class="VietRt">ba</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>三</rb><rp>(</rp><rt class="VietRt">tam</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>三</rb><rp>(</rp><rt class="VietRt">tam</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>叄</rb><rp>(</rp><rt class="VietRt">tam</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>叄</rb><rp>(</rp><rt class="VietRt">tam</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>三</rb><rp>(</rp><rt class="VietRt">tam</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>三</rb><rp>(</rp><rt class="VietRt">tam</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>叄</rb><rp>(</rp><rt class="VietRt">tam</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>叄</rb><rp>(</rp><rt class="VietRt">tam</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>40</td>
-		<td><ruby><rb>𦊚</rb><rp>(</rp><rt class="VietRt">bốn</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp></ruby>、<br/><ruby><rb>𦊚</rb><rp>(</rp><rt class="VietRt">bốn</rt><rp>)</rp><rb>𨔿</rb><rp>(</rp><rt class="VietRt">chục</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𦊚</rb><rp>(</rp><rt class="VietRt">bốn</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt
+                class="VietRt">mươi</rt><rp>)</rp></ruby>、<br/><ruby><rb>𦊚</rb><rp>(</rp><rt class="VietRt">bốn</rt><rp>)</rp><rb>𨔿</rb><rp>(</rp><rt
+                class="VietRt">chục</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>四</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>肆</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>四</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>肆</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>41</td>
-		<td><ruby><rb>𦊚</rb><rp>(</rp><rt class="VietRt">bốn</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp><rb>𠬠</rb><rp>(</rp><rt class="VietRt">mốt</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𦊚</rb><rp>(</rp><rt class="VietRt">bốn</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt
+                class="VietRt">mươi</rt><rp>)</rp><rb>𠬠</rb><rp>(</rp><rt class="VietRt">mốt</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>四</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>肆</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>四</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>肆</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>44</td>
-		<td><ruby><rb>𦊚</rb><rp>(</rp><rt class="VietRt">bốn</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp><rb>𦊛</rb><rp>(</rp><rt class="VietRt">tư</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𦊚</rb><rp>(</rp><rt class="VietRt">bốn</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt
+                class="VietRt">mươi</rt><rp>)</rp><rb>𦊛</rb><rp>(</rp><rt class="VietRt">tư</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>四</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>四</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>肆</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>肆</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>四</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>四</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>肆</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>肆</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>50</td>
-		<td><ruby><rb>𠄼</rb><rp>(</rp><rt class="VietRt">năm</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠄼</rb><rp>(</rp><rt class="VietRt">năm</rt><rp>)</rp><rb>𨔿</rb><rp>(</rp><rt class="VietRt">chục</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𠄼</rb><rp>(</rp><rt class="VietRt">năm</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt
+                class="VietRt">mươi</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠄼</rb><rp>(</rp><rt class="VietRt">năm</rt><rp>)</rp><rb>𨔿</rb><rp>(</rp><rt
+                class="VietRt">chục</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>五</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>伍</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>五</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>伍</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>51</td>
-		<td><ruby><rb>𠄼</rb><rp>(</rp><rt class="VietRt">năm</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp><rb>𠬠</rb><rp>(</rp><rt class="VietRt">mốt</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𠄼</rb><rp>(</rp><rt class="VietRt">năm</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt
+                class="VietRt">mươi</rt><rp>)</rp><rb>𠬠</rb><rp>(</rp><rt class="VietRt">mốt</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>五</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>伍</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>五</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>伍</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>55</td>
-		<td><ruby><rb>𠄼</rb><rp>(</rp><rt class="VietRt">năm</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp><rb>𠄻</rb><rp>(</rp><rt class="VietRt">lăm</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𠄼</rb><rp>(</rp><rt class="VietRt">năm</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt
+                class="VietRt">mươi</rt><rp>)</rp><rb>𠄻</rb><rp>(</rp><rt class="VietRt">lăm</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>五</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>五</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>伍</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>伍</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>五</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>五</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>伍</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>伍</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
@@ -585,57 +826,98 @@ li:before {
 	</tr>
 	<tr>
 		<td>101</td>
-		<td><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp><rb>𤾓</rb><rp>(</rp><rt class="VietRt">trăm</rt><rp>)</rp><rb>零</rb><rp>(</rp><rt class="VietRt">linh</rt><rp>)</rp><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp><rb>𤾓</rb><rp>(</rp><rt
+                class="VietRt">trăm</rt><rp>)</rp><rb>零</rb><rp>(</rp><rt class="VietRt">linh</rt><rp>)</rp><rb>𠬠</rb><rp>(</rp><rt
+                class="VietRt">một</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>百</rb><rp>(</rp><rt class="VietRt">bách</rt><rp>)</rp><rb>零</rb><rp>(</rp><rt class="VietRt">linh</rt><rp>)</rp><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>佰</rb><rp>(</rp><rt class="VietRt">bách</rt><rp>)</rp><rb>零</rb><rp>(</rp><rt class="VietRt">linh</rt><rp>)</rp><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>百</rb><rp>(</rp><rt class="VietRt">bách</rt><rp>)</rp><rb>零</rb><rp>(</rp><rt class="VietRt">linh</rt><rp>)</rp><rb>一</rb><rp>(</rp><rt
+                class="VietRt">nhất</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>佰</rb><rp>(</rp><rt class="VietRt">bách</rt><rp>)</rp><rb>零</rb><rp>(</rp><rt class="VietRt">linh</rt><rp>)</rp><rb>壹</rb><rp>(</rp><rt
+                class="VietRt">nhất</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>1,000</td>
-		<td><ruby><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt
+                class="VietRt">một</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 		<td><ruby><rb>千</rb><rp>(</rp><rt class="VietRt">thiên</rt><rp>)</rp></ruby></td>
 		<td><ruby><rb>仟</rb><rp>(</rp><rt class="VietRt">thiên</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp></ruby> may become <ruby><rb>𠦳</rb><rp>(</rp><rt class="VietRt">ngàn</rt><rp>)</rp></ruby> (<ruby><rb>𫦇</rb><rp>(</rp><rt class="VietRt">Miền</rt><rp>)</rp><rb>中</rb><rp>(</rp><rt class="VietRt">Trung</rt><rp>)</rp></ruby>、<br/><ruby><rb>𫦇</rb><rp>(</rp><rt class="VietRt">Miền</rt><rp>)</rp><rb>南</rb><rp>(</rp><rt class="VietRt">Nam</rt><rp>)</rp></ruby>)</td>
+		<td><ruby><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp></ruby> may become <ruby><rb>𠦳</rb><rp>(</rp><rt
+                class="VietRt">ngàn</rt><rp>)</rp></ruby> (<ruby><rb>𫦇</rb><rp>(</rp><rt class="VietRt">Miền</rt><rp>)</rp><rb>中</rb><rp>(</rp><rt
+                class="VietRt">Trung</rt><rp>)</rp></ruby>、<br/><ruby><rb>𫦇</rb><rp>(</rp><rt class="VietRt">Miền</rt><rp>)</rp><rb>南</rb><rp>(</rp><rt
+                class="VietRt">Nam</rt><rp>)</rp></ruby>)</td>
 	</tr>
 	<tr>
 		<td>1,001</td>
-		<td><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp><rb>空</rb><rp>(</rp><rt class="VietRt">không</rt><rp>)</rp><rb>𤾓</rb><rp>(</rp><rt class="VietRt">trăm</rt><rp>)</rp><rb>零</rb><rp>(</rp><rt class="VietRt">linh</rt><rp>)</rp><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp><rb>零</rb><rp>(</rp><rt class="VietRt">linh</rt><rp>)</rp><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt
+                class="VietRt">nghìn</rt><rp>)</rp><rb>空</rb><rp>(</rp><rt class="VietRt">không</rt><rp>)</rp><rb>𤾓</rb><rp>(</rp><rt
+                class="VietRt">trăm</rt><rp>)</rp><rb>零</rb><rp>(</rp><rt class="VietRt">linh</rt><rp>)</rp><rb>𠬠</rb><rp>(</rp><rt
+                class="VietRt">một</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt
+                class="VietRt">nghìn</rt><rp>)</rp><rb>零</rb><rp>(</rp><rt class="VietRt">linh</rt><rp>)</rp><rb>𠬠</rb><rp>(</rp><rt
+                class="VietRt">một</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp><rb>千</rb><rp>(</rp><rt class="VietRt">thiên</rt><rp>)</rp><rb>零</rb><rp>(</rp><rt class="VietRt">linh</rt><rp>)</rp><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp><rb>仟</rb><rp>(</rp><rt class="VietRt">thiên</rt><rp>)</rp><rb>零</rb><rp>(</rp><rt class="VietRt">linh</rt><rp>)</rp><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp><rb>千</rb><rp>(</rp><rt class="VietRt">thiên</rt><rp>)</rp><rb>零</rb><rp>(</rp><rt
+                class="VietRt">linh</rt><rp>)</rp><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp><rb>仟</rb><rp>(</rp><rt class="VietRt">thiên</rt><rp>)</rp><rb>零</rb><rp>(</rp><rt
+                class="VietRt">linh</rt><rp>)</rp><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>1,024</td>
-		<td><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp><rb>空</rb><rp>(</rp><rt class="VietRt">không</rt><rp>)</rp><rb>𤾓</rb><rp>(</rp><rt class="VietRt">trăm</rt><rp>)</rp><rb>𠄩</rb><rp>(</rp><rt class="VietRt">hai</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp><rb>𦊛</rb><rp>(</rp><rt class="VietRt">tư</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp><rb>𠄩</rb><rp>(</rp><rt class="VietRt">hai</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp><rb>𦊛</rb><rp>(</rp><rt class="VietRt">tư</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt
+                class="VietRt">nghìn</rt><rp>)</rp><rb>空</rb><rp>(</rp><rt class="VietRt">không</rt><rp>)</rp><rb>𤾓</rb><rp>(</rp><rt
+                class="VietRt">trăm</rt><rp>)</rp><rb>𠄩</rb><rp>(</rp><rt class="VietRt">hai</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt
+                class="VietRt">mươi</rt><rp>)</rp><rb>𦊛</rb><rp>(</rp><rt class="VietRt">tư</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt
+                class="VietRt">một</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp><rb>𠄩</rb><rp>(</rp><rt
+                class="VietRt">hai</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp><rb>𦊛</rb><rp>(</rp><rt
+                class="VietRt">tư</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp><rb>千</rb><rp>(</rp><rt class="VietRt">thiên</rt><rp>)</rp><rb>二</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>四</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp><rb>仟</rb><rp>(</rp><rt class="VietRt">thiên</rt><rp>)</rp><rb>貳</rb><rp>(</rp><rt class="VietRt">nhị</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>肆</rb><rp>(</rp><rt class="VietRt">tứ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp><rb>千</rb><rp>(</rp><rt class="VietRt">thiên</rt><rp>)</rp><rb>二</rb><rp>(</rp><rt
+                class="VietRt">nhị</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>四</rb><rp>(</rp><rt
+                class="VietRt">tứ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp><rb>仟</rb><rp>(</rp><rt class="VietRt">thiên</rt><rp>)</rp><rb>貳</rb><rp>(</rp><rt
+                class="VietRt">nhị</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>肆</rb><rp>(</rp><rt
+                class="VietRt">tứ</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>10,000</td>
-		<td><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt
+                class="VietRt">nghìn</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>萬</rb><rp>(</rp><rt class="VietRt">vạn</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp><rb>萬</rb><rp>(</rp><rt class="VietRt">vạn</rt><rp>)</rp></ruby>＊</td>
+		<td><ruby><rb>萬</rb><rp>(</rp><rt class="VietRt">vạn</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt
+                class="VietRt">một</rt><rp>)</rp><rb>萬</rb><rp>(</rp><rt class="VietRt">vạn</rt><rp>)</rp></ruby>＊</td>
 		<td style="background-color: lightgrey;"></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>10,055</td>
-		<td><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp><rb>空</rb><rp>(</rp><rt class="VietRt">không</rt><rp>)</rp><rb>𤾓</rb><rp>(</rp><rt class="VietRt">trăm</rt><rp>)</rp><rb>𠄼</rb><rp>(</rp><rt class="VietRt">năm</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp><rb>𠄻</rb><rp>(</rp><rt class="VietRt">lăm</rt><rp>)</rp></ruby>、<br/><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp><rb>𠄼</rb><rp>(</rp><rt class="VietRt">năm</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp><rb>𠄻</rb><rp>(</rp><rt class="VietRt">lăm</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt
+                class="VietRt">nghìn</rt><rp>)</rp><rb>空</rb><rp>(</rp><rt class="VietRt">không</rt><rp>)</rp><rb>𤾓</rb><rp>(</rp><rt
+                class="VietRt">trăm</rt><rp>)</rp><rb>𠄼</rb><rp>(</rp><rt class="VietRt">năm</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt
+                class="VietRt">mươi</rt><rp>)</rp><rb>𠄻</rb><rp>(</rp><rt class="VietRt">lăm</rt><rp>)</rp></ruby>、<br/><ruby><rb>𨑮</rb><rp>(</rp><rt
+                class="VietRt">mười</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp><rb>𠄼</rb><rp>(</rp><rt
+                class="VietRt">năm</rt><rp>)</rp><rb>𠦩</rb><rp>(</rp><rt class="VietRt">mươi</rt><rp>)</rp><rb>𠄻</rb><rp>(</rp><rt
+                class="VietRt">lăm</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp><rb>萬</rb><rp>(</rp><rt class="VietRt">vạn</rt><rp>)</rp><rb>五</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>五</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp><rb>萬</rb><rp>(</rp><rt class="VietRt">vạn</rt><rp>)</rp><rb>伍</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt class="VietRt">thập</rt><rp>)</rp><rb>伍</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>一</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp><rb>萬</rb><rp>(</rp><rt
+                class="VietRt">vạn</rt><rp>)</rp><rb>五</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp><rb>十</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>五</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>壹</rb><rp>(</rp><rt class="VietRt">nhất</rt><rp>)</rp><rb>萬</rb><rp>(</rp><rt
+                class="VietRt">vạn</rt><rp>)</rp><rb>伍</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp><rb>拾</rb><rp>(</rp><rt
+                class="VietRt">thập</rt><rp>)</rp><rb>伍</rb><rp>(</rp><rt class="VietRt">ngũ</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
 	<tr>
 		<td>100,000</td>
-		<td><ruby><rb>𤾓</rb><rp>(</rp><rt class="VietRt">trăm</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp><rb>𤾓</rb><rp>(</rp><rt class="VietRt">trăm</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𤾓</rb><rp>(</rp><rt class="VietRt">trăm</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt
+                class="VietRt">nghìn</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp><rb>𤾓</rb><rp>(</rp><rt
+                class="VietRt">trăm</rt><rp>)</rp><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>億</rb><rp>(</rp><rt class="VietRt">ức</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp><rb>億</rb><rp>(</rp><rt class="VietRt">ức</rt><rp>)</rp></ruby>＊、<br/><ruby><rb>𨑮</rb><rp>(</rp><rt class="VietRt">mười</rt><rp>)</rp><rb>萬</rb><rp>(</rp><rt class="VietRt">vạn</rt><rp>)</rp></ruby>＊</td>
+		<td><ruby><rb>億</rb><rp>(</rp><rt class="VietRt">ức</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt
+                class="VietRt">một</rt><rp>)</rp><rb>億</rb><rp>(</rp><rt class="VietRt">ức</rt><rp>)</rp></ruby>＊、<br/><ruby><rb>𨑮</rb><rp>(</rp><rt
+                class="VietRt">mười</rt><rp>)</rp><rb>萬</rb><rp>(</rp><rt class="VietRt">vạn</rt><rp>)</rp></ruby>＊</td>
 		<td style="background-color: lightgrey;"></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
@@ -643,7 +925,10 @@ li:before {
 		<td>1,000,000</td>
 		<td style="background-color: lightgrey;"></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>兆</rb><rp>(</rp><rt class="VietRt">triệu</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp><rb>兆</rb><rp>(</rp><rt class="VietRt">triệu</rt><rp>)</rp></ruby>＊、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt class="VietRt">một</rt><rp>)</rp><rb>𤾓</rb><rp>(</rp><rt class="VietRt">trăm</rt><rp>)</rp><rb>萬</rb><rp>(</rp><rt class="VietRt">vạn</rt><rp>)</rp></ruby>＊</td>
+		<td><ruby><rb>兆</rb><rp>(</rp><rt class="VietRt">triệu</rt><rp>)</rp></ruby>、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt
+                class="VietRt">một</rt><rp>)</rp><rb>兆</rb><rp>(</rp><rt class="VietRt">triệu</rt><rp>)</rp></ruby>＊、<br/><ruby><rb>𠬠</rb><rp>(</rp><rt
+                class="VietRt">một</rt><rp>)</rp><rb>𤾓</rb><rp>(</rp><rt class="VietRt">trăm</rt><rp>)</rp><rb>萬</rb><rp>(</rp><rt
+                class="VietRt">vạn</rt><rp>)</rp></ruby>＊</td>
 		<td style="background-color: lightgrey;"></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
@@ -675,7 +960,8 @@ li:before {
 		<td>10^12</td>
 		<td style="background-color: lightgrey;"></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp><rb>秭</rb><rp>(</rp><rt class="VietRt">tỷ</rt><rp>)</rp></ruby>＊</td>
+		<td><ruby><rb>𠦳</rb><rp>(</rp><rt class="VietRt">nghìn</rt><rp>)</rp><rb>秭</rb><rp>(</rp><rt
+                class="VietRt">tỷ</rt><rp>)</rp></ruby>＊</td>
 		<td style="background-color: lightgrey;"></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
@@ -683,7 +969,8 @@ li:before {
 		<td>10^15</td>
 		<td style="background-color: lightgrey;"></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>兆</rb><rp>(</rp><rt class="VietRt">triệu</rt><rp>)</rp><rb>秭</rb><rp>(</rp><rt class="VietRt">tỷ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>兆</rb><rp>(</rp><rt class="VietRt">triệu</rt><rp>)</rp><rb>秭</rb><rp>(</rp><rt
+                class="VietRt">tỷ</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
@@ -691,7 +978,8 @@ li:before {
 		<td>10^18</td>
 		<td style="background-color: lightgrey;"></td>
 		<td style="background-color: lightgrey;"></td>
-		<td><ruby><rb>秭</rb><rp>(</rp><rt class="VietRt">tỷ</rt><rp>)</rp><rb>秭</rb><rp>(</rp><rt class="VietRt">tỷ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>秭</rb><rp>(</rp><rt class="VietRt">tỷ</rt><rp>)</rp><rb>秭</rb><rp>(</rp><rt
+                class="VietRt">tỷ</rt><rp>)</rp></ruby></td>
 		<td style="background-color: lightgrey;"></td>
 		<td style="background-color: lightgrey;"></td>
 	</tr>
@@ -699,16 +987,35 @@ li:before {
 
 
 <p style="font-size: 15pt">
-<ruby><rb><ruby><rb>江</rb><rp>(</rp><rt class="VietRt">Giang</rt><rp>)</rp></ruby><ruby><rb>戶</rb><rp>(</rp><rt class="VietRt">Hộ</rt><rp>)</rp></ruby></rb><rp>(</rp><rt class="VietRt">Edo</rt><rp>)</rp></ruby>（<ruby><rb>義</rb><rp>(</rp><rt class="VietRt">nghĩa</rt><rp>)</rp></ruby><ruby><rb>𪜀</rb><rp>(</rp><rt class="VietRt">là</rt><rp>)</rp></ruby>「<ruby><rb>𨷶</rb><rp>(</rp><rt class="VietRt">cửa </rt><rp>)</rp><rb>滝</rb><rp>(</rp><rt class="VietRt">sông</rt><rp>)</rp></ruby>」、<ruby><rb>發</rb><rp>(</rp><rt class="VietRt">phát</rt><rp>)</rp><rb>音</rb><rp>(</rp><rt class="VietRt">âm</rt><rp>)</rp></ruby><ruby><rb>㗂</rb><rp>(</rp><rt class="VietRt">Tiếng</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp></ruby><ruby><rb>如</rb><rp>(</rp><rt class="VietRt">như</rt><rp>)</rp></ruby><ruby><rb>𪜀</rb><rp>(</rp><rt class="VietRt">là</rt><rp>)</rp></ruby>Ê-đô）<ruby><rb>群</rb><rp>(</rp><rt class="VietRt">còn</rt><rp>)</rp></ruby><ruby><rb>得</rb><rp>(</rp><rt class="VietRt">được</rt><rp>)</rp></ruby><ruby><rb>曰</rb><rp>(</rp><rt class="VietRt">viết</rt><rp>)</rp></ruby><ruby><rb>𪜀</rb><rp>(</rp><rt class="VietRt">là</rt><rp>)</rp></ruby>Yedo<ruby><rb>咍</rb><rp>(</rp><rt class="VietRt">hay</rt><rp>)</rp></ruby>Yeddo、<ruby><rb>𪜀</rb><rp>(</rp><rt class="VietRt">là</rt><rp>)</rp></ruby><ruby><rb>𠸜</rb><rp>(</rp><rt class="VietRt">tên</rt><rp>)</rp></ruby><ruby><rb>𪡻</rb><rp>(</rp><rt class="VietRt">cũ</rt><rp>)</rp></ruby><ruby><rb>𧵑</rb><rp>(</rp><rt class="VietRt">của</rt><rp>)</rp></ruby><ruby><rb>首</rb><rp>(</rp><rt class="VietRt">thủ</rt><rp>)</rp><rb>都</rb><rp>(</rp><rt class="VietRt">đô</rt><rp>)</rp></ruby><ruby><rb>𫭔</rb><rp>(</rp><rt class="VietRt">nước</rt><rp>)</rp></ruby><ruby><rb>日</rb><rp>(</rp><rt class="VietRt">Nhật</rt><rp>)</rp></ruby><ruby><rb>即</rb><rp>(</rp><rt class="VietRt">tức</rt><rp>)</rp></ruby><ruby><rb><ruby><rb>東</rb><rp>(</rp><rt class="VietRt">Đông</rt><rp>)</rp></ruby><ruby><rb>京</rb><rp>(</rp><rt class="VietRt">Kinh</rt><rp>)</rp></ruby></rb><rp>(</rp><rt class="VietRt">Tōkyō</rt><rp>)</rp></ruby><ruby><rb>𣈜</rb><rp>(</rp><rt class="VietRt">ngày</rt><rp>)</rp><rb>𫢩</rb><rp>(</rp><rt class="VietRt">nay</rt><rp>)</rp></ruby>。
+<ruby><rb><ruby><rb>江</rb><rp>(</rp><rt class="VietRt">Giang</rt><rp>)</rp></ruby><ruby><rb>戶</rb><rp>(</rp><rt
+        class="VietRt">Hộ</rt><rp>)</rp></ruby></rb><rp>(</rp><rt class="VietRt">Edo</rt><rp>)</rp></ruby>（<ruby><rb>義</rb><rp>(</rp><rt
+        class="VietRt">nghĩa</rt><rp>)</rp></ruby><ruby><rb>𪜀</rb><rp>(</rp><rt class="VietRt">là</rt><rp>)</rp></ruby>「<ruby><rb>𨷶</rb><rp>(</rp><rt
+        class="VietRt">cửa </rt><rp>)</rp><rb>滝</rb><rp>(</rp><rt class="VietRt">sông</rt><rp>)</rp></ruby>」、<ruby><rb>發</rb><rp>(</rp><rt
+        class="VietRt">phát</rt><rp>)</rp><rb>音</rb><rp>(</rp><rt class="VietRt">âm</rt><rp>)</rp></ruby><ruby><rb>㗂</rb><rp>(</rp><rt
+        class="VietRt">Tiếng</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp></ruby><ruby><rb>如</rb><rp>(</rp><rt
+        class="VietRt">như</rt><rp>)</rp></ruby><ruby><rb>𪜀</rb><rp>(</rp><rt class="VietRt">là</rt><rp>)</rp></ruby>Ê-đô）<ruby><rb>群</rb><rp>(</rp><rt
+        class="VietRt">còn</rt><rp>)</rp></ruby><ruby><rb>得</rb><rp>(</rp><rt class="VietRt">được</rt><rp>)</rp></ruby><ruby><rb>曰</rb><rp>(</rp><rt
+        class="VietRt">viết</rt><rp>)</rp></ruby><ruby><rb>𪜀</rb><rp>(</rp><rt class="VietRt">là</rt><rp>)</rp></ruby>Yedo<ruby><rb>咍</rb><rp>(</rp><rt
+        class="VietRt">hay</rt><rp>)</rp></ruby>Yeddo、<ruby><rb>𪜀</rb><rp>(</rp><rt class="VietRt">là</rt><rp>)</rp></ruby><ruby><rb>𠸜</rb><rp>(</rp><rt
+        class="VietRt">tên</rt><rp>)</rp></ruby><ruby><rb>𪡻</rb><rp>(</rp><rt class="VietRt">cũ</rt><rp>)</rp></ruby><ruby><rb>𧵑</rb><rp>(</rp><rt
+        class="VietRt">của</rt><rp>)</rp></ruby><ruby><rb>首</rb><rp>(</rp><rt class="VietRt">thủ</rt><rp>)</rp><rb>都</rb><rp>(</rp><rt
+        class="VietRt">đô</rt><rp>)</rp></ruby><ruby><rb>𫭔</rb><rp>(</rp><rt class="VietRt">nước</rt><rp>)</rp></ruby><ruby><rb>日</rb><rp>(</rp><rt
+        class="VietRt">Nhật</rt><rp>)</rp></ruby><ruby><rb>即</rb><rp>(</rp><rt class="VietRt">tức</rt><rp>)</rp></ruby><ruby><rb><ruby><rb>東</rb><rp>(</rp><rt
+        class="VietRt">Đông</rt><rp>)</rp></ruby><ruby><rb>京</rb><rp>(</rp><rt class="VietRt">Kinh</rt><rp>)</rp></ruby></rb><rp>(</rp><rt
+        class="VietRt">Tōkyō</rt><rp>)</rp></ruby><ruby><rb>𣈜</rb><rp>(</rp><rt class="VietRt">ngày</rt><rp>)</rp><rb>𫢩</rb><rp>(</rp><rt
+        class="VietRt">nay</rt><rp>)</rp></ruby>。
 </p>
 
 <table id="Từ_vựng" border="1" style="font-size: 15pt; text-align: center">
 	<tr>
-		<td colspan="3"><ruby><rb>詞</rb><rp>(</rp><rt class="VietRt">Từ</rt><rp>)</rp><rb>彙</rb><rp>(</rp><rt class="VietRt">vựng</rt><rp>)</rp></ruby></td>
+		<td colspan="3"><ruby><rb>詞</rb><rp>(</rp><rt class="VietRt">Từ</rt><rp>)</rp><rb>彙</rb><rp>(</rp><rt
+                class="VietRt">vựng</rt><rp>)</rp></ruby></td>
 	</tr>
 	<tr>
-		<td><ruby><rb>詞</rb><rp>(</rp><rt class="VietRt">Từ</rt><rp>)</rp><rb>純</rb><rp>(</rp><rt class="VietRt">thuần</rt><rp>)</rp><rb>粹</rb><rp>(</rp><rt class="VietRt">túy</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>詞</rb><rp>(</rp><rt class="VietRt">Từ</rt><rp>)</rp><rb>漢󠄁</rb><rp>(</rp><rt class="VietRt">Hán</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>詞</rb><rp>(</rp><rt class="VietRt">Từ</rt><rp>)</rp><rb>純</rb><rp>(</rp><rt
+                class="VietRt">thuần</rt><rp>)</rp><rb>粹</rb><rp>(</rp><rt class="VietRt">túy</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>詞</rb><rp>(</rp><rt class="VietRt">Từ</rt><rp>)</rp><rb>漢󠄁</rb><rp>(</rp><rt
+                class="VietRt">Hán</rt><rp>)</rp><rb>越</rb><rp>(</rp><rt class="VietRt">Việt</rt><rp>)</rp></ruby></td>
 	</tr>
 	<tr>
 		<td><ruby><rb>𡶀</rb><rp>(</rp><rt class="VietRt">núi</rt><rp>)</rp></ruby></td>
@@ -724,10 +1031,12 @@ li:before {
 	</tr>
 	<tr>
 		<td><ruby><rb>𫭔</rb><rp>(</rp><rt class="VietRt">nước</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>國</rb><rp>(</rp><rt class="VietRt">quốc</rt><rp>)</rp></ruby>/<ruby><rb>国</rb><rp>(</rp><rt class="VietRt">quốc</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>國</rb><rp>(</rp><rt class="VietRt">quốc</rt><rp>)</rp></ruby>/<ruby><rb>国</rb><rp>(</rp><rt
+                class="VietRt">quốc</rt><rp>)</rp></ruby></td>
 	</tr>
 	<tr>
-		<td><ruby><rb>𣷷</rb><rp>(</rp><rt class="VietRt">biển</rt><rp>)</rp></ruby>/<ruby><rb>𤅶</rb><rp>(</rp><rt class="VietRt">biển</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𣷷</rb><rp>(</rp><rt class="VietRt">biển</rt><rp>)</rp></ruby>/<ruby><rb>𤅶</rb><rp>(</rp><rt
+                class="VietRt">biển</rt><rp>)</rp></ruby></td>
 		<td><ruby><rb>海󠄀</rb><rp>(</rp><rt class="VietRt">hải</rt><rp>)</rp></ruby></td>
 	</tr>
 	<tr>
@@ -736,7 +1045,8 @@ li:before {
 	</tr>
 	<tr>
 		<td><ruby><rb>𧍆</rb><rp>(</rp><rt class="VietRt">cua</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>蠏</rb><rp>(</rp><rt class="VietRt">giải</rt><rp>)</rp></ruby>/<ruby><rb>蟹</rb><rp>(</rp><rt class="VietRt">giải</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>蠏</rb><rp>(</rp><rt class="VietRt">giải</rt><rp>)</rp></ruby>/<ruby><rb>蟹</rb><rp>(</rp><rt
+                class="VietRt">giải</rt><rp>)</rp></ruby></td>
 	</tr>
 	<tr>
 		<td><ruby><rb>𧋻</rb><rp>(</rp><rt class="VietRt">rắn</rt><rp>)</rp></ruby></td>
@@ -744,20 +1054,25 @@ li:before {
 	</tr>
 	<tr>
 		<td><ruby><rb>𧋟</rb><rp>(</rp><rt class="VietRt">muỗi</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>蚊</rb><rp>(</rp><rt class="VietRt">mân</rt><rp>)</rp></ruby>/<ruby><rb>蚊</rb><rp>(</rp><rt class="VietRt">văn</rt><rp>)</rp></ruby>	</td>
+		<td><ruby><rb>蚊</rb><rp>(</rp><rt class="VietRt">mân</rt><rp>)</rp></ruby>/<ruby><rb>蚊</rb><rp>(</rp><rt
+                class="VietRt">văn</rt><rp>)</rp></ruby>	</td>
 	</tr>
 	<tr>
 		<td><ruby><rb>㹥</rb><rp>(</rp><rt class="VietRt">chó</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>犬</rb><rp>(</rp><rt class="VietRt">  khuyển</rt><rp>)</rp></ruby>、<ruby><rb>狗</rb><rp>(</rp><rt class="VietRt">cẩu</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>犬</rb><rp>(</rp><rt class="VietRt">  khuyển</rt><rp>)</rp></ruby>、<ruby><rb>狗</rb><rp>(</rp><rt
+                class="VietRt">cẩu</rt><rp>)</rp></ruby></td>
 	</tr>
 	<tr>
-		<td><ruby><rb>㺔</rb><rp>(</rp><rt class="VietRt">voi</rt><rp>)</rp></ruby>/<ruby><rb>𤠅</rb><rp>(</rp><rt class="VietRt">voi</rt><rp>)</rp></ruby>/<ruby><rb>𤢇</rb><rp>(</rp><rt class="VietRt">voi</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>㺔</rb><rp>(</rp><rt class="VietRt">voi</rt><rp>)</rp></ruby>/<ruby><rb>𤠅</rb><rp>(</rp><rt
+                class="VietRt">voi</rt><rp>)</rp></ruby>/<ruby><rb>𤢇</rb><rp>(</rp><rt class="VietRt">voi</rt><rp>)</rp></ruby></td>
 		<td><ruby><rb>象</rb><rp>(</rp><rt class="VietRt">tượng</rt><rp>)</rp></ruby></td>
 	</tr>
 	<tr>
-		<td><ruby><rb>𤠲</rb><rp>(</rp><rt class="VietRt">khỉ</rt><rp>)</rp></ruby>/<ruby><rb>𤠳</rb><rp>(</rp><rt class="VietRt">khỉ</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>𤠲</rb><rp>(</rp><rt class="VietRt">khỉ</rt><rp>)</rp></ruby>/<ruby><rb>𤠳</rb><rp>(</rp><rt
+                class="VietRt">khỉ</rt><rp>)</rp></ruby></td>
 		<td><ruby><rb>猿</rb><rp>(</rp><rt class="VietRt">viên</rt><rp>)</rp></ruby></td>
-		<td><ruby><rb>猿</rb><rp>(</rp><rt class="VietRt">vượn</rt><rp>)</rp></ruby>/<ruby><rb>𤠴</rb><rp>(</rp><rt class="VietRt">vượn</rt><rp>)</rp></ruby>/<ruby><rb>𤢥</rb><rp>(</rp><rt class="VietRt">vượn</rt><rp>)</rp></ruby></td>
+		<td><ruby><rb>猿</rb><rp>(</rp><rt class="VietRt">vượn</rt><rp>)</rp></ruby>/<ruby><rb>𤠴</rb><rp>(</rp><rt
+                class="VietRt">vượn</rt><rp>)</rp></ruby>/<ruby><rb>𤢥</rb><rp>(</rp><rt class="VietRt">vượn</rt><rp>)</rp></ruby></td>
 	</tr>
 	<tr>
 		<td><ruby><rb>𤞺</rb><rp>(</rp><rt class="VietRt">cáo</rt><rp>)</rp></ruby></td>
@@ -786,20 +1101,64 @@ li:before {
 
 <!-- lang="ja-Jpan-JP" style="font-family: 'Noto Serif JP', serif;" -->
 <span id="日本語" lang="ja-Jpan-JP" xml:lang="ja-Jpan-JP" class="jaFonts1">
-<p style="font-size: 20pt"><ruby><rb>日</rb><rp>（</rp><rt class="ThirtyRt">に</rt><rp>）</rp><rb>本</rb><rp>（</rp><rt class="ThirtyRt">ほん</rt><rp>）</rp><rb>語</rb><rp>（</rp><rt class="ThirtyRt">ご</rt><rp>）</rp></ruby>：</p>
+<p style="font-size: 20pt"><ruby><rb>日</rb><rp>（</rp><rt class="ThirtyRt">に</rt><rp>）</rp><rb>本</rb><rp>（</rp><rt
+        class="ThirtyRt">ほん</rt><rp>）</rp><rb>語</rb><rp>（</rp><rt class="ThirtyRt">ご</rt><rp>）</rp></ruby>：</p>
 <p style="font-size: 15pt">
-こんにちは。<ruby><rb>僕</rb><rp>（</rp><rt class="ThirtyRt">ぼく</rt><rp>）</rp></ruby>はミゲルです。<ruby><rb>日</rb><rp>（</rp><rt class="ThirtyRt">に</rt><rp>）</rp><rb>本</rb><rp>（</rp><rt class="ThirtyRt">ほん</rt><rp>）</rp><rb>語</rb><rp>（</rp><rt class="ThirtyRt">ご</rt><rp>）</rp></ruby>を<ruby><rb>勉</rb><rp>（</rp><rt class="ThirtyRt">べん</rt><rp>）</rp><rb>強</rb><rp>（</rp><rt class="ThirtyRt">きょう</rt><rp>）</rp></ruby>しています。<ruby><rb>漢</rb><rp>（</rp><rt class="ThirtyRt">かん</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>と<ruby><rb>仮</rb><rp>（</rp><rt class="ThirtyRt">か</rt><rp>）</rp><rb>名</rb><rp>（</rp><rt class="ThirtyRt">な</rt><rp>）</rp></ruby>が<ruby><rb>好</rb><rp>（</rp><rt class="ThirtyRt">す</rt><rp>）</rp></ruby>きです。<ruby><rb>今</rb><rp>（</rp><rt class="ThirtyRt">いま</rt><rp>）</rp></ruby>は<ruby><rb>振</rb><rp>（</rp><rt class="ThirtyRt">ふ</rt><rp>）</rp><rb>り</rb><rt class="ThirtyRt"></rt><rb>仮</rb><rp>（</rp><rt class="ThirtyRt">が</rt><rp>）</rp><rb>名</rb><rp>（</rp><rt class="ThirtyRt">な</rt><rp>）</rp></ruby>の<ruby><rb>作</rb><rp>（</rp><rt class="ThirtyRt">つく</rt><rp>）</rp><rb>り</rb><rt class="ThirtyRt"></rt><rb>方</rb><rp>（</rp><rt class="ThirtyRt">かた</rt><rp>）</rp></ruby>の<ruby><rb>練</rb><rp>（</rp><rt class="ThirtyRt">れん</rt><rp>）</rp><rb>習</rb><rp>（</rp><rt class="ThirtyRt">しゅう</rt><rp>）</rp></ruby>しています。そして、<ruby><rb>Unicode</rb><rp>（</rp><rt class="ThirtyRt">ユニコード</rt><rp>）</rp></ruby>の<ruby><rb>異</rb><rp>（</rp><rt class="ThirtyRt">い</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt class="ThirtyRt">たい</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>セレクタの<ruby><rb>練</rb><rp>（</rp><rt class="ThirtyRt">れん</rt><rp>）</rp><rb>習</rb><rp>（</rp><rt class="ThirtyRt">しゅう</rt><rp>）</rp></ruby>もしています。<ruby><rb>Ｃ</rb><rp>（</rp><rt class="ThirtyRt">シー</rt><rp>）</rp><rb>Ｊ</rb><rp>（</rp><rt class="ThirtyRt">ジェイ</rt><rp>）</rp><rb>Ｋ</rb><rp>（</rp><rt class="ThirtyRt">ケー</rt><rp>）</rp><rb>互</rb><rp>（</rp><rt class="ThirtyRt">ご</rt><rp>）</rp><rb>換</rb><rp>（</rp><rt class="ThirtyRt">かん</rt><rp>）</rp><rb>用</rb><rp>（</rp><rt class="ThirtyRt">よう</rt><rp>）</rp><rb>文字</rb><rp>（</rp><rt class="ThirtyRt">もじ</rt><rp>）</rp></ruby>と<ruby><rb>異</rb><rp>（</rp><rt class="ThirtyRt">い</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt class="ThirtyRt">たい</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>セレクタのどちら<ruby><rb>使</rb><rp>（</rp><rt class="ThirtyRt">つか</rt><rp>）</rp></ruby>いたいかがまだよく<ruby><rb>分</rb><rp>（</rp><rt class="ThirtyRt">わ</rt><rp>）</rp></ruby>かりません。<ruby><rb>両</rb><rp>（</rp><rt class="ThirtyRt">りょう</rt><rp>）</rp><rb>方</rb><rp>（</rp><rt class="ThirtyRt">ほう</rt><rp>）</rp></ruby>は<ruby><rb>専</rb><rp>（</rp><rt class="ThirtyRt">せん</rt><rp>）</rp><rb>門</rb><rp>（</rp><rt class="ThirtyRt">もん</rt><rp>）</rp><rb>的</rb><rp>（</rp><rt class="ThirtyRt">てき</rt><rp>）</rp></ruby>なフォントが<ruby><rb>必</rb><rp>（</rp><rt class="ThirtyRt">ひつ</rt><rp>）</rp><rb>要</rb><rp>（</rp><rt class="ThirtyRt">よう</rt><rp>）</rp></ruby>です。
+こんにちは。<ruby><rb>僕</rb><rp>（</rp><rt class="ThirtyRt">ぼく</rt><rp>）</rp></ruby>はミゲルです。<ruby><rb>日</rb><rp>（</rp><rt
+        class="ThirtyRt">に</rt><rp>）</rp><rb>本</rb><rp>（</rp><rt class="ThirtyRt">ほん</rt><rp>）</rp><rb>語</rb><rp>（</rp><rt
+        class="ThirtyRt">ご</rt><rp>）</rp></ruby>を<ruby><rb>勉</rb><rp>（</rp><rt class="ThirtyRt">べん</rt><rp>）</rp><rb>強</rb><rp>（</rp><rt
+        class="ThirtyRt">きょう</rt><rp>）</rp></ruby>しています。<ruby><rb>漢</rb><rp>（</rp><rt class="ThirtyRt">かん</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt
+        class="ThirtyRt">じ</rt><rp>）</rp></ruby>と<ruby><rb>仮</rb><rp>（</rp><rt class="ThirtyRt">か</rt><rp>）</rp><rb>名</rb><rp>（</rp><rt
+        class="ThirtyRt">な</rt><rp>）</rp></ruby>が<ruby><rb>好</rb><rp>（</rp><rt class="ThirtyRt">す</rt><rp>）</rp></ruby>きです。<ruby><rb>今</rb><rp>（</rp><rt
+        class="ThirtyRt">いま</rt><rp>）</rp></ruby>は<ruby><rb>振</rb><rp>（</rp><rt class="ThirtyRt">ふ</rt><rp>）</rp><rb>り</rb><rt
+        class="ThirtyRt"></rt><rb>仮</rb><rp>（</rp><rt class="ThirtyRt">が</rt><rp>）</rp><rb>名</rb><rp>（</rp><rt
+        class="ThirtyRt">な</rt><rp>）</rp></ruby>の<ruby><rb>作</rb><rp>（</rp><rt class="ThirtyRt">つく</rt><rp>）</rp><rb>り</rb><rt
+        class="ThirtyRt"></rt><rb>方</rb><rp>（</rp><rt class="ThirtyRt">かた</rt><rp>）</rp></ruby>の<ruby><rb>練</rb><rp>（</rp><rt
+        class="ThirtyRt">れん</rt><rp>）</rp><rb>習</rb><rp>（</rp><rt class="ThirtyRt">しゅう</rt><rp>）</rp></ruby>しています。そして、<ruby><rb>Unicode</rb><rp>（</rp><rt
+        class="ThirtyRt">ユニコード</rt><rp>）</rp></ruby>の<ruby><rb>異</rb><rp>（</rp><rt class="ThirtyRt">い</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt
+        class="ThirtyRt">たい</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>セレクタの<ruby><rb>練</rb><rp>（</rp><rt
+        class="ThirtyRt">れん</rt><rp>）</rp><rb>習</rb><rp>（</rp><rt class="ThirtyRt">しゅう</rt><rp>）</rp></ruby>もしています。<ruby><rb>Ｃ</rb><rp>（</rp><rt
+        class="ThirtyRt">シー</rt><rp>）</rp><rb>Ｊ</rb><rp>（</rp><rt class="ThirtyRt">ジェイ</rt><rp>）</rp><rb>Ｋ</rb><rp>（</rp><rt
+        class="ThirtyRt">ケー</rt><rp>）</rp><rb>互</rb><rp>（</rp><rt class="ThirtyRt">ご</rt><rp>）</rp><rb>換</rb><rp>（</rp><rt
+        class="ThirtyRt">かん</rt><rp>）</rp><rb>用</rb><rp>（</rp><rt class="ThirtyRt">よう</rt><rp>）</rp><rb>文字</rb><rp>（</rp><rt
+        class="ThirtyRt">もじ</rt><rp>）</rp></ruby>と<ruby><rb>異</rb><rp>（</rp><rt class="ThirtyRt">い</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt
+        class="ThirtyRt">たい</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>セレクタのどちら<ruby><rb>使</rb><rp>（</rp><rt
+        class="ThirtyRt">つか</rt><rp>）</rp></ruby>いたいかがまだよく<ruby><rb>分</rb><rp>（</rp><rt class="ThirtyRt">わ</rt><rp>）</rp></ruby>かりません。<ruby><rb>両</rb><rp>（</rp><rt
+        class="ThirtyRt">りょう</rt><rp>）</rp><rb>方</rb><rp>（</rp><rt class="ThirtyRt">ほう</rt><rp>）</rp></ruby>は<ruby><rb>専</rb><rp>（</rp><rt
+        class="ThirtyRt">せん</rt><rp>）</rp><rb>門</rb><rp>（</rp><rt class="ThirtyRt">もん</rt><rp>）</rp><rb>的</rb><rp>（</rp><rt
+        class="ThirtyRt">てき</rt><rp>）</rp></ruby>なフォントが<ruby><rb>必</rb><rp>（</rp><rt class="ThirtyRt">ひつ</rt><rp>）</rp><rb>要</rb><rp>（</rp><rt
+        class="ThirtyRt">よう</rt><rp>）</rp></ruby>です。
 </p>
-<p style="font-size: 15pt"><ruby><rb>芦󠄀</rb><rp>（</rp><rt class="ThirtyRt">あし</rt><rp>）</rp><rb>田</rb><rp>（</rp><rt class="ThirtyRt">だ</rt><rp>）</rp></ruby>さんは<ruby><rb>芦󠄁</rb><rp>（</rp><rt class="ThirtyRt">あし</rt><rp>）</rp><rb>屋</rb><rp>（</rp><rt class="ThirtyRt">や</rt><rp>）</rp></ruby>の<ruby><rb>お</rb><rt class="ThirtyRt"></rt><rb>嬢</rb><rp>（</rp><rt class="ThirtyRt">じょう</rt><rp>）</rp><rb>様</rb><rp>（</rp><rt class="ThirtyRt">さま</rt><rp>）</rp></ruby>だ。</p>
-<p style="font-size: 15pt"><ruby><rb>芸󠄀</rb><rp>（</rp><rt class="ThirtyRt">げい</rt><rp>）</rp><rb>者</rb><rp>（</rp><rt class="ThirtyRt">しゃ</rt><rp>）</rp></ruby>と<ruby><rb>芸󠄂</rb><rp>（</rp><rt class="ThirtyRt">うん</rt><rp>）</rp><rb>亭</rb><rp>（</rp><rt class="ThirtyRt">てい</rt><rp>）</rp></ruby>は<ruby><rb>関</rb><rp>（</rp><rt class="ThirtyRt">かん</rt><rp>）</rp><rb>係</rb><rp>（</rp><rt class="ThirtyRt">けい</rt><rp>）</rp></ruby>ないです。</p>
-<p style="font-size: 15pt"><ruby><rb>東</rb><rp>（</rp><rt class="ThirtyRt">とう</rt><rp>）</rp><rb>京</rb><rp>（</rp><rt class="ThirtyRt">きょう</rt><rp>）</rp><rb>都</rb><rp>（</rp><rt class="ThirtyRt">と</rt><rp>）</rp></ruby><ruby><rb>葛󠄁</rb><rp>（</rp><rt class="ThirtyRt">かつ</rt><rp>）</rp><rb>飾</rb><rp>（</rp><rt class="ThirtyRt">しか</rt><rp>）</rp><rb>区</rb><rp>（</rp><rt class="ThirtyRt">く</rt><rp>）</rp></ruby>と<ruby><rb>奈</rb><rp>（</rp><rt class="ThirtyRt">な</rt><rp>）</rp><rb>良</rb><rp>（</rp><rt class="ThirtyRt">ら</rt><rp>）</rp><rb>県</rb><rp>（</rp><rt class="ThirtyRt">けん</rt><rp>）</rp></ruby><ruby><rb>葛󠄀</rb><rp>（</rp><rt class="ThirtyRt">かつ</rt><rp>）</rp><rb>城</rb><rp>（</rp><rt class="ThirtyRt">らぎ</rt><rp>）</rp><rb>市</rb><rp>（</rp><rt class="ThirtyRt">し</rt><rp>）</rp></ruby>の「葛」は<ruby><rb>異</rb><rp>（</rp><rt class="ThirtyRt">い</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt class="ThirtyRt">たい</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>です。</p>
+<p style="font-size: 15pt"><ruby><rb>芦󠄀</rb><rp>（</rp><rt class="ThirtyRt">あし</rt><rp>）</rp><rb>田</rb><rp>（</rp><rt
+        class="ThirtyRt">だ</rt><rp>）</rp></ruby>さんは<ruby><rb>芦󠄁</rb><rp>（</rp><rt class="ThirtyRt">あし</rt><rp>）</rp><rb>屋</rb><rp>（</rp><rt
+        class="ThirtyRt">や</rt><rp>）</rp></ruby>の<ruby><rb>お</rb><rt class="ThirtyRt"></rt><rb>嬢</rb><rp>（</rp><rt
+        class="ThirtyRt">じょう</rt><rp>）</rp><rb>様</rb><rp>（</rp><rt class="ThirtyRt">さま</rt><rp>）</rp></ruby>だ。</p>
+<p style="font-size: 15pt"><ruby><rb>芸󠄀</rb><rp>（</rp><rt class="ThirtyRt">げい</rt><rp>）</rp><rb>者</rb><rp>（</rp><rt
+        class="ThirtyRt">しゃ</rt><rp>）</rp></ruby>と<ruby><rb>芸󠄂</rb><rp>（</rp><rt class="ThirtyRt">うん</rt><rp>）</rp><rb>亭</rb><rp>（</rp><rt
+        class="ThirtyRt">てい</rt><rp>）</rp></ruby>は<ruby><rb>関</rb><rp>（</rp><rt class="ThirtyRt">かん</rt><rp>）</rp><rb>係</rb><rp>（</rp><rt
+        class="ThirtyRt">けい</rt><rp>）</rp></ruby>ないです。</p>
+<p style="font-size: 15pt"><ruby><rb>東</rb><rp>（</rp><rt class="ThirtyRt">とう</rt><rp>）</rp><rb>京</rb><rp>（</rp><rt
+        class="ThirtyRt">きょう</rt><rp>）</rp><rb>都</rb><rp>（</rp><rt class="ThirtyRt">と</rt><rp>）</rp></ruby><ruby><rb>葛󠄁</rb><rp>（</rp><rt
+        class="ThirtyRt">かつ</rt><rp>）</rp><rb>飾</rb><rp>（</rp><rt class="ThirtyRt">しか</rt><rp>）</rp><rb>区</rb><rp>（</rp><rt
+        class="ThirtyRt">く</rt><rp>）</rp></ruby>と<ruby><rb>奈</rb><rp>（</rp><rt class="ThirtyRt">な</rt><rp>）</rp><rb>良</rb><rp>（</rp><rt
+        class="ThirtyRt">ら</rt><rp>）</rp><rb>県</rb><rp>（</rp><rt class="ThirtyRt">けん</rt><rp>）</rp></ruby><ruby><rb>葛󠄀</rb><rp>（</rp><rt
+        class="ThirtyRt">かつ</rt><rp>）</rp><rb>城</rb><rp>（</rp><rt class="ThirtyRt">らぎ</rt><rp>）</rp><rb>市</rb><rp>（</rp><rt
+        class="ThirtyRt">し</rt><rp>）</rp></ruby>の「葛」は<ruby><rb>異</rb><rp>（</rp><rt class="ThirtyRt">い</rt><rp>）</rp><rb>体</rb><rp>（</rp><rt
+        class="ThirtyRt">たい</rt><rp>）</rp><rb>字</rb><rp>（</rp><rt class="ThirtyRt">じ</rt><rp>）</rp></ruby>です。</p>
 </span>
 
 
 <span id="沖縄口" lang="ryu-Jpan-JP" xml:lang="ryu-Jpan-JP" class="jaFonts1">
-<p style="font-size: 20pt"><ruby><rb>沖</rb><rp>（</rp><rt class="ThirtyRt">うち</rt><rp>）</rp><rb>縄</rb><rp>（</rp><rt class="ThirtyRt">なー</rt><rp>）</rp><rb>口</rb><rp>（</rp><rt class="ThirtyRt">ぐち</rt><rp>）</rp></ruby>：</p>
+<p style="font-size: 20pt"><ruby><rb>沖</rb><rp>（</rp><rt class="ThirtyRt">うち</rt><rp>）</rp><rb>縄</rb><rp>（</rp><rt
+        class="ThirtyRt">なー</rt><rp>）</rp><rb>口</rb><rp>（</rp><rt class="ThirtyRt">ぐち</rt><rp>）</rp></ruby>：</p>
 <p style="font-size: 15pt">
-はいさい！<ruby><rb>我</rb><rp>（</rp><rt class="ThirtyRt">わ</rt><rp>）</rp></ruby>んねーミゲルやいびーん！<ruby><rb>生</rb><rp>（</rp><rt class="ThirtyRt">しー</rt><rp>）</rp><rb>徒</rb><rp>（</rp><rt class="ThirtyRt">とぅ</rt><rp>）</rp></ruby>やいびーん！くれー<ruby><rb>沖</rb><rp>（</rp><rt class="ThirtyRt">うち</rt><rp>）</rp><rb>縄</rb><rp>（</rp><rt class="ThirtyRt">なー</rt><rp>）</rp><rb>口</rb><rp>（</rp><rt class="ThirtyRt">ぐち</rt><rp>）</rp></ruby>やいびーん！<ruby><rb>今</rb><rp>（</rp><rt class="ThirtyRt">なま</rt><rp>）</rp><rb>あ</rb><rp>（</rp><rt class="ThirtyRt">ー</rt><rp>）</rp></ruby><ruby><rb>大和</rb><rp>（</rp><rt class="ThirtyRt">やまとぅ</rt><rp>）</rp><rb>口</rb><rp>（</rp><rt class="ThirtyRt">ぐち</rt><rp>）</rp></ruby><ruby><rb>勉</rb><rp>（</rp><rt class="ThirtyRt">びん</rt><rp>）</rp><rb>強</rb><rp>（</rp><rt class="ThirtyRt">ちょー</rt><rp>）</rp></ruby>さびーん！
+はいさい！<ruby><rb>我</rb><rp>（</rp><rt class="ThirtyRt">わ</rt><rp>）</rp></ruby>んねーミゲルやいびーん！<ruby><rb>生</rb><rp>（</rp><rt
+        class="ThirtyRt">しー</rt><rp>）</rp><rb>徒</rb><rp>（</rp><rt class="ThirtyRt">とぅ</rt><rp>）</rp></ruby>やいびーん！くれー<ruby><rb>沖</rb><rp>（</rp><rt
+        class="ThirtyRt">うち</rt><rp>）</rp><rb>縄</rb><rp>（</rp><rt class="ThirtyRt">なー</rt><rp>）</rp><rb>口</rb><rp>（</rp><rt
+        class="ThirtyRt">ぐち</rt><rp>）</rp></ruby>やいびーん！<ruby><rb>今</rb><rp>（</rp><rt class="ThirtyRt">なま</rt><rp>）</rp><rb>あ</rb><rp>（</rp><rt
+        class="ThirtyRt">ー</rt><rp>）</rp></ruby><ruby><rb>大和</rb><rp>（</rp><rt class="ThirtyRt">やまとぅ</rt><rp>）</rp><rb>口</rb><rp>（</rp><rt
+        class="ThirtyRt">ぐち</rt><rp>）</rp></ruby><ruby><rb>勉</rb><rp>（</rp><rt class="ThirtyRt">びん</rt><rp>）</rp><rb>強</rb><rp>（</rp><rt
+        class="ThirtyRt">ちょー</rt><rp>）</rp></ruby>さびーん！
 </p>
 </span>
 
@@ -850,7 +1209,6 @@ li:before {
 哈囉！我係Miguel！我學緊日文同埋漢字、所以識少少中文。
 </p>
 </span>
-
 
 
 </body>
